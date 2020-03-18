@@ -18,11 +18,7 @@ class UserController extends Controller
     
         {
             $user = user::all();
-            $site = DB::table('site')->get();
-            $direktorat = DB::table('direktorat')->get();
-            $departemen = DB::table('departemen')->get();
-            $unit = DB::table('unit')->get();
-            return view('master.user.index',compact('user','site','direktorat','departemen','unit'));
+            return view('master.user.index',compact('user'));
         }
     
 
