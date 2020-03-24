@@ -18,12 +18,12 @@ class UnitController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    
-        {
-            $unit = unit::all();
-            return view('master.unit.index',compact('unit'));
-        }
-    
+
+    {
+        $unit = unit::all();
+        return view('master.unit.index', compact('unit'));
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -47,10 +47,10 @@ class UnitController extends Controller
             'unit_name' => 'required',
             'unit_status' => 'required',
         ]);
-  
+
         unit::create($request->all());
         return redirect()->route('unit_index')
-                        ->with('info','unit created successfully.');
+            ->with('info', 'unit created successfully.');
     }
 
     /**
@@ -59,11 +59,11 @@ class UnitController extends Controller
      * @param  \App\unit  $unit
      * @return \Illuminate\Http\Response
      */
-    public function show(unit $unit,$id)
+    public function show(unit $unit, $id)
     {
-        $unit = unit::where('unit_id',$id)->first();
+        $unit = unit::where('unit_id', $id)->first();
         // return $id;
-        return view('master.unit.show',compact('unit'));
+        return view('master.unit.show', compact('unit'));
     }
 
     /**
@@ -72,13 +72,13 @@ class UnitController extends Controller
      * @param  \App\unit  $unit
      * @return \Illuminate\Http\Response
      */
-     public function edit($id)
+    public function edit($id)
     {
-         // $unit = unit::where('unit_id',$id)->first();
+        // $unit = unit::where('unit_id',$id)->first();
         // dd($unit->all());
         $unit = unit::find($id);
         // return view('master.unit.edit',compact('unit'));
-        return view('master.unit.edit',['unit'=>$unit]);
+        return view('master.unit.edit', ['unit' => $unit]);
     }
 
     /**
@@ -88,21 +88,21 @@ class UnitController extends Controller
      * @param  \App\unit  $unit
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,$id)
+    public function update(Request $request, $id)
     {
         // dd($unit->all());
-       $request->validate([
+        $request->validate([
             'unit_name' => 'required',
             'unit_status' => 'required',
         ]);
-  
-        unit::where('unit_id',$id)->update([
-                    'unit_name' => $request->unit_name,
-                    'unit_status' => $request->unit_status,
-                ]);
-   
+
+        unit::where('unit_id', $id)->update([
+            'unit_name' => $request->unit_name,
+            'unit_status' => $request->unit_status,
+        ]);
+
         return redirect()->route('unit_index')
-                        ->with('info','unit updated successfully.');
+            ->with('info', 'unit updated successfully.');
     }
 
     /**
@@ -111,11 +111,11 @@ class UnitController extends Controller
      * @param  \App\unit  $unit
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request,$id)
+    public function destroy(Request $request, $id)
     {
-        unit::where('unit_id',$id)->delete();
-  
+        unit::where('unit_id', $id)->delete();
+
         return redirect()->route('unit_index')
-                        ->with('info','Unit deleted successfully');
+            ->with('info', 'Unit deleted successfully');
     }
 }
