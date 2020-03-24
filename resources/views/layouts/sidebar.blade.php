@@ -48,19 +48,28 @@
                 </li>
                 <li class="menu-title">Purchasing</li>
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Minna<span
+                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-key"></i><span> Master<span
                                 class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href="charts-morris">Daisuki No Ha Ha</a></li>
-                        <li><a href="charts-morris">Boku No Pico</a></li>
+                        <li><a href="charts-morris">Item</a></li>
+                        <li><a href="charts-morris">Supplier</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Watashi<span
+                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-archive"></i><span> Data<span
                                 class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href="charts-morris">Daisuki</a></li>
-                        <li><a href="charts-morris">Zero Two</a></li>
+                        <li><a href="charts-morris">Supplier</a></li>
+                        <li><a href="charts-morris">Faktur/Invoice</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-receipt"></i><span> Form<span
+                                class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                    <ul class="submenu">
+                        <li><a href="charts-morris">Penerimaan Barang</a></li>
+                        <li><a href="charts-morris">Penerimaan Pembelian</a></li>
+                        <li><a href="charts-morris">Pre Order</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Penjualan</li>
