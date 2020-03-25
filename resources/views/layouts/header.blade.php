@@ -4,12 +4,19 @@
     <!-- LOGO -->
     <div class="topbar-left">
         <a href="index.html" class="logo">
-            <span>
+            {{-- <span>
                 <img src="{{ URL::asset('assets/images/logoit2.png') }}" alt="" height="52">
 
             </span>
             <i>
                 <img src="{{ URL::asset('assets/images/logoit2.png') }}" alt="" height="12">
+            </i> --}}
+            <span>
+                <img src="{{ URL::asset('assets/images/inaco.png') }}" alt="" height="52">
+
+            </span>
+            <i>
+                <img src="{{ URL::asset('assets/images/inaco.png') }}" alt="" height="27">
             </i>
         </a>
     </div>
