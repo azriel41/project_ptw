@@ -59,7 +59,7 @@ class LoginController extends Controller
             return redirect()->route('home')
                 ->with('success', 'You are logged in. Good Luck');
         } else {
-            return redirect()->route('login')->with('alert', 'Onegai Senpai, masukkan password yang benar.');
+            return redirect()->route('login')->with('alert', 'Onegai Senpai, masukin yang benar.');
         }
     }
 
@@ -68,7 +68,7 @@ class LoginController extends Controller
         $this->guard()->logout();
         $request->session()->flush();
         $request->session()->regenerate();
-        return redirect()->route('login')->with('info', 'Horayyy senpai, anata sudah logout.');
+        return redirect()->route('login')->with('info', 'Horayyy senpai, anata sudah keluar.');
         // $this->middleware('guest')->except('logout')->with('info','You are Successfully Logout.');
     }
 }

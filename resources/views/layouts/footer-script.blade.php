@@ -4,6 +4,7 @@
 <script src="{{ URL::asset('assets/js/metisMenu.min.js') }}"></script>
 <script src="{{ URL::asset('assets/js/jquery.slimscroll.js') }}"></script>
 <script src="{{ URL::asset('assets/js/waves.min.js') }}"></script>
+<script src="{{ URL::asset('assets/js/iziToast.min.js') }}"></script>
 {{-- <script src="{{ URL::asset('../node_modules/izitoast/dist/js/iziToast.js') }}"></script>
 <script src="{{ URL::asset('../node_modules/timepicker/jquery.timepicker.min.js') }}"></script>
 <script src="{{ URL::asset('../node_modules/datepair.js/dist/datepair.min.js') }}"></script> --}}

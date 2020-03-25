@@ -154,4 +154,25 @@
 @endsection
 
 @section('script')
+@if (session('info'))
+<script type="text/javascript">
+    $(document).ready(function() {
+    iziToast.info({
+        title: 'Info',
+        position: 'topRight',
+        message: '{{ session('info') }}',});
+    });
+</script>
+@endif
+
+@if (session('alert'))
+<script type="text/javascript">
+    $(document).ready(function() {
+    iziToast.error({
+        title: 'Error',
+        position: 'topRight',
+        message: '{{ session('alert') }}',});
+    });
+</script>
+@endif
 @endsection
