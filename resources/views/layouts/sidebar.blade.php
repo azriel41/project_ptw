@@ -95,16 +95,10 @@
                         <li><a href="charts-echart">Laporan Penjualan</a></li>
                     </ul>
                 </li>
-
                 <li class="menu-title">Panduan</li>
                 <li>
                     <a href="calendar" class="waves-effect"><i class="ti-calendar"></i><span> Panduan </span></a>
                 </li>
-
-
-
-
-
             </ul>
         </div>
         <!-- Sidebar -->
