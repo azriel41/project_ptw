@@ -23,7 +23,7 @@
 @endsection
 
 @section('content')
-             {{--       <div class="row">
+             <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 <div class="card mini-stat bg-primary text-white">
                                     <div class="card-body">
@@ -95,7 +95,7 @@
                                     </div>
                                 </div>
                                 <!-- end card -->
-                            </div> --}}
+                            </div>
 
                             
 @endsection
