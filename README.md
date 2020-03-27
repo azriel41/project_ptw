@@ -2,7 +2,7 @@
 
 ## All Departement
 
-## TUTORIAL
+# TUTORIAL
 
 Seng pengen belajar laravel wajib install
 
@@ -15,23 +15,23 @@ Seng pengen belajar laravel wajib install
    ==> <a href="https://www.sublimetext.com/3">SUBLIME</a>
 6. <a href="https://github.com/join">Gawe akun github</a>
 
-Lak mari ngirim username github nak deny atau nak grub ben isok collab project e
-
-Clone repo <a href="https://github.com/azriel41/project_ptw.git">https://github.com/azriel41/project_ptw.git</a> (IKI REPONE)
-sytax "git clone"
-
-Seng pengen belajar laravel isok remote aku lewat anydesk
+> Lak mari ngirim username github nak deny atau nak grub ben isok collab project e
+> Clone repo <a href="https://github.com/azriel41/project_ptw.git">https://github.com/azriel41/project_ptw.git</a> (IKI REPONE)
+> sytax "git clone"
+> Seng pengen belajar laravel isok remote aku lewat anydesk
 
 <a href="http://backupotak.com/">TUTORIAL</a>
 <a href="https://pornhub.com/">STREAMING VIDEO BEN GAK BOSEN</a>
-TUTORIAL VIDEO:
+
+## TUTORIAL VIDEO
+
 <a href="https://www.youtube.com/watch?v=-82XvDLsGKc&list=PLRKMmwY3-5MzQzlYKzc9-zymaCXaRfwOF">1</a>
 
 <a href="https://www.youtube.com/watch?v=gVHsZbnSkbc&list=PLjCsQGDzSNNuDT87jBzveotGwjK1ht2Y7">2</a>
 
 <a href="https://www.youtube.com/watch?v=poGkVaLUd30&list=PLOpjxspexSIlL3jDsW5jlA75tJUP_fSW-">3</a>
 
-## TUTORIAL ENDED
+# TUTORIAL ENDED
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
