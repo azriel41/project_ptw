@@ -16,7 +16,8 @@
 
 @section('content')
 @if (session('info'))
-    <div class="alert alert-success bg-success text-white alert-dismissible fade show" role="alert">
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -37,33 +38,24 @@
 <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
     <thead align="center">
         <tr>
+            <th>Kode Departemen</th>
             <th>Nama Departemen</th>
-            <th>Status</th>
-            <th>Created Date</th>
             <th>Aksi</th>
         </tr>
         </thead>
         <tbody>
             @foreach($departemen as $departemen)
             <tr>
-                <td>{{ $departemen->departemen_name }}</td>
+                <td>{{ $departemen->kode }}</td>
+                <td>{{ $departemen->nama }}</td>
                 <td align="center">
-                    @if ($departemen->departemen_status == 1)
-                        Aktif
-                        @else
-                        Tidak Aktif
-                    @endif
-                </td>
-                <td align="center">{{ date('d-M-Y',strtotime($departemen->created_at)) }}</td>
-                <td align="center">
-                    <form action="{{ route('departemen_destroy',['id'=>$departemen->departemen_id]) }}" method="POST">
+                    <form action="{{ route('departemen_destroy',['id'=>$departemen->id]) }}" method="POST">
                         {{ csrf_field() }}
                         {{ method_field('POST') }}
                     
-                    <a class="btn btn-info" href="{{ route('departemen_show',['id'=>$departemen->departemen_id]) }}"><i class="fas fa-eye"></i> Show</a>
+                    <a class="btn btn-info" href="{{ route('departemen_show',['id'=>$departemen->id]) }}"><i class="fas fa-eye"></i> Show</a>
     
-                    <a class="btn btn-primary" href="{{ route('departemen_edit',['id'=>$departemen->departemen_id]) }}"><i class="fas fa-edit"></i> Edit</a>
-                    
+                    <a class="btn btn-primary" href="{{ route('departemen_edit',['id'=>$departemen->id]) }}"><i class="fas fa-edit"></i> Edit</a>
                     <button type="submit"  class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
                     </form>
                 </td>

@@ -7,7 +7,9 @@
 
 @section('breadcrumb')
 <div class="col-sm-6">
-    <h4 class="page-title">Edit Departemen</h4>
+    
+<h4 class="page-title">Ubah Departemen</h4>
+
 </div>
 @endsection
 
@@ -17,31 +19,23 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-body">        
-                                        <form method="POST" action="{{ route('departemen_update',['id'=>$departemen->departemen_id]) }}">
+                                        <form method="POST" action="{{ route('departemen_update',['id'=>$departemen->id]) }}">
                                             {{ csrf_field() }}
                                             {{ method_field('POST') }}
-                                            <div class="form-group row">
-                                            <label for="example-text-input" class="col-sm-2 col-form-label">Nama Departemen</label>
+                                        
+                                        <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Kode Departemen</label>
                                             <div class="col-sm-10">
-                                                <input type="text" name="departemen_name" class="form-control"  value=" {{ $departemen->departemen_name }}">
+                                                <input type="text" name="kode" class="form-control"  value="{{ $departemen->kode }}">
                                             </div>
                                         </div>
 
-                                            <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Status Departemen</label>
+                                        <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Nama Departemen</label>
                                             <div class="col-sm-10">
-                                                <select class="custom-select" name="departemen_status" required>
-                                                     @if ($departemen->departemen_status == 0)
-                                                        <option value="0" selected="">Tidak Aktif</option>
-                                                        <option value="1">Aktif</option>
-                                                    @elseif ($departemen->departemen_status == 1)
-                                                        <option value="0">Tidak Aktif</option>
-                                                        <option value="1" selected="">Aktif</option>
-                                                    @endif
-                                                </select>
+                                                <input type="text" name="fullname" class="form-control"  value="{{ $departemen->nama }}">
                                             </div>
                                         </div>
-                                            
                                             <div class="form-group m-b-0">
                                                 <div>
                                                     <button type="submit" class="btn btn-primary waves-effect waves-light">

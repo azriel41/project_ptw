@@ -29,11 +29,9 @@ class UserController extends Controller
    
     public function create()
     {
-            $site = DB::table('site')->get();
-            $direktorat = DB::table('direktorat')->get();
-            $departemen = DB::table('departemen')->get();
-            $unit = DB::table('unit')->get();
-            return view('master.user.create',compact('site','direktorat','departemen','unit'));
+
+            return view('master.user.create');
+
         // return view('master.user.create');
     }
 

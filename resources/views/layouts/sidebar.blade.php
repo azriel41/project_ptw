@@ -14,8 +14,11 @@
                             </li>
                             <li>
                                 <a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span> Master <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
-                                <ul class="submenu">
+                                 <ul class="submenu">
                                     <li><a href="{{ route('user_index') }}">User</a></li>
+                                </ul>
+                                 <ul class="submenu">
+                                    <li><a href="{{ route('departemen_index') }}">Departemen</a></li>
                                 </ul>
                             </li>
                             <li class="menu-title">Human Resource</li>

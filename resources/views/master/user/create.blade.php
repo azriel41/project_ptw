@@ -19,7 +19,7 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-body">        
-                                        <form method="POST" action="{{ route('user_store') }}">
+                                         <form method="POST" action="{{ route('user_store') }}">
                                             {{ csrf_field() }}
                                             <div class="form-group row">
                                             <label for="example-text-input" class="col-sm-2 col-form-label">Username</label>
@@ -27,48 +27,31 @@
                                                 <input type="text" name="user_name" class="form-control" placeholder="Masukan Username" required>
                                             </div>
                                         </div>
-
-                                        <div class="form-group row">
+                                         <div class="form-group row">
                                             <label for="example-text-input" class="col-sm-2 col-form-label">NIK</label>
                                             <div class="col-sm-10">
                                                 <input type="text" name="nik" class="form-control" placeholder="Masukan NIK" required>
                                             </div>
                                         </div>
-
-                                        <div class="form-group row">
+                                         <div class="form-group row">
                                             <label for="example-text-input" class="col-sm-2 col-form-label">Nama Lengkap</label>
                                             <div class="col-sm-10">
                                                 <input type="text" name="fullname" class="form-control" placeholder="Masukan Nama Lengkap" required>
                                             </div>
-                                        </div>
-
-                                        
-
-                                        <div class="form-group row">
-                                            <label class="col-lg-2 col-form-label">Lokasi:</label>
+                                        </div>                                         
+                                         <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Tempat Lahir</label>
                                             <div class="col-sm-10">
-                                                <select class="form-control" name="lokasi" required>
-                                                    <option selected="" value="">- Pilih Lokasi -</option>
-                                                    @foreach ($site as $element)
-                                                        <option value="{{ $element->site_id }}">{{ $element->site_name }}</option>
-                                                    @endforeach
-                                                </select>
+                                                <input type="text" name="tempat_lahir" class="form-control datepicker" placeholder="Masukkan Tempat Lahir" required>
                                             </div>
                                         </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-lg-2 col-form-label">Direktorat:</label>
+                                         <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Tanggal Kerja</label>
                                             <div class="col-sm-10">
-                                                <select class="form-control" name="lokasi" required>
-                                                    <option selected="" value="">- Pilih Direktorat -</option>
-                                                    @foreach ($direktorat as $element)
-                                                        <option value="{{ $element->direktorat_id }}">{{ $element->direktorat_name }}</option>
-                                                    @endforeach
-                                                </select>
+                                                <input type="text" name="tanggal_kerja" class="form-control datepicker" placeholder="Masukkan Tanggal Kerja" required>
                                             </div>
                                         </div>
-
-                                        <div class="form-group row">
+                                         <div class="form-group row">
                                             <label class="col-lg-2 col-form-label">Departemen:</label>
                                             <div class="col-sm-10">
                                                 <select class="form-control" name="departemen" required>
@@ -79,20 +62,7 @@
                                                 </select>
                                             </div>
                                         </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-lg-2 col-form-label">Unit:</label>
-                                            <div class="col-sm-10">
-                                                <select class="form-control" name="unit" required>
-                                                    <option selected="" value="">- Pilih Unit -</option>
-                                                    @foreach ($unit as $element)
-                                                        <option value="{{ $element->unit_id }}">{{ $element->unit_name }}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
+                                    <div class="form-group row">
                                             <label class="col-lg-2 col-form-label">Hak Akses:</label>
                                             <div class="col-sm-10">
                                                 <select class="form-control" name="hakakses" required>
@@ -138,5 +108,6 @@
     $(document).ready(function() {
          $('form').parsley();
     });
+    $('.datepicker').datepicker();
 </script>
 @endsection
