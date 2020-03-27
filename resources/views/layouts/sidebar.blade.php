@@ -51,7 +51,7 @@
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-key"></i><span> Master<span
                                 class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href="charts-morris">Item</a></li>
+                        <li><a href="p_mitem">Item</a></li>
                         <li><a href="charts-morris">Supplier</a></li>
                     </ul>
                 </li>
@@ -59,8 +59,8 @@
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-archive"></i><span> Data<span
                                 class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href="charts-morris">Supplier</a></li>
-                        <li><a href="charts-morris">Faktur/Invoice</a></li>
+                        <li><a href="supplier">Supplier</a></li>
+                        <li><a href="invoice">Faktur/Invoice</a></li>
                     </ul>
                 </li>
                 <li>

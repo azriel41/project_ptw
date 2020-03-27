@@ -66,7 +66,7 @@
                                     <label for="userpassword">Password</label>
                                     <input type="password" name="password"
                                         class="form-control @error('password') is-invalid @enderror"
-                                        placeholder="Masukkan Password Anda" required="required">
+                                        placeholder="Masukkan password" required="required">
                                 </div>
                                 <div class="float-right text-right">
                                     <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Log

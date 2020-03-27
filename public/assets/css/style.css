@@ -197,7 +197,7 @@ strong {
 
 .bg-primary {
     /*background-color: #0275d8 !important;*/
-    background-color: #0275d8 !important;
+    background-color: #626ed4 !important;
 }
 
 .bg-success {
@@ -480,7 +480,7 @@ dt {
 /* ==============
   Waves Effect
 ===================*/
-/*
+/*!
  * Waves v0.7.6
  * http://fian.my.id/Waves 
  * 
@@ -1201,8 +1201,8 @@ button:focus {
 }
 
 .btn-primary {
-    background-color: #0275d8;
-    border: 1px solid #0275d8;
+    background-color: #626ed4;
+    border: 1px solid #626ed4;
 }
 
 .btn-primary:hover,
@@ -1227,8 +1227,9 @@ button:focus {
 .btn-outline-primary:not([disabled]):not(.disabled).active,
 .btn-outline-primary:not([disabled]):not(.disabled):active,
 .show>.btn-outline-primary.dropdown-toggle {
-    background-color: #4e5ccf;
-    border: 1px solid #4e5ccf;
+    color: #fff;
+    background-color: #4452cc;
+    border-color: #3a49c9;
 }
 
 .btn-primary.focus,
@@ -1998,7 +1999,7 @@ button:focus {
   Pagination
 ===================*/
 .pagination .page-link {
-    color: #0275d8;
+    color: #626ed4;
 }
 
 .pagination .page-link:focus,
@@ -2010,8 +2011,8 @@ button:focus {
 }
 
 .pagination .page-item.active .page-link {
-    background-color: #0275d8;
-    border-color: #0275d8;
+    background-color: #626ed4;
+    border-color: #626ed4;
 }
 
 /* ======
