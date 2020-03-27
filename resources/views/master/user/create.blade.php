@@ -44,53 +44,20 @@
 
                                         
 
-                                        <div class="form-group row">
-                                            <label class="col-lg-2 col-form-label">Lokasi:</label>
-                                            <div class="col-sm-10">
-                                                <select class="form-control" name="lokasi" required>
-                                                    <option selected="" value="">- Pilih Lokasi -</option>
-                                                    @foreach ($site as $element)
-                                                        <option value="{{ $element->site_id }}">{{ $element->site_name }}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-lg-2 col-form-label">Direktorat:</label>
-                                            <div class="col-sm-10">
-                                                <select class="form-control" name="lokasi" required>
-                                                    <option selected="" value="">- Pilih Direktorat -</option>
-                                                    @foreach ($direktorat as $element)
-                                                        <option value="{{ $element->direktorat_id }}">{{ $element->direktorat_name }}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                        </div>
 
                                         <div class="form-group row">
                                             <label class="col-lg-2 col-form-label">Departemen:</label>
                                             <div class="col-sm-10">
                                                 <select class="form-control" name="departemen" required>
                                                     <option selected="" value="">- Pilih Departemen -</option>
-                                                    @foreach ($departemen as $element)
+                                                   {{--  @foreach ($departemen as $element)
                                                         <option value="{{ $element->departemen_id }}">{{ $element->departemen_name }}</option>
-                                                    @endforeach
+                                                    @endforeach --}}
                                                 </select>
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
-                                            <label class="col-lg-2 col-form-label">Unit:</label>
-                                            <div class="col-sm-10">
-                                                <select class="form-control" name="unit" required>
-                                                    <option selected="" value="">- Pilih Unit -</option>
-                                                    @foreach ($unit as $element)
-                                                        <option value="{{ $element->unit_id }}">{{ $element->unit_name }}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                        </div>
+                                        
 
                                         <div class="form-group row">
                                             <label class="col-lg-2 col-form-label">Hak Akses:</label>

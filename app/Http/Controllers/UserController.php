@@ -25,10 +25,6 @@ class UserController extends Controller
    
     public function create()
     {
-            $site = DB::table('site')->get();
-            $direktorat = DB::table('direktorat')->get();
-            $departemen = DB::table('departemen')->get();
-            $unit = DB::table('unit')->get();
             return view('master.user.create',compact('site','direktorat','departemen','unit'));
         // return view('master.user.create');
     }
@@ -72,8 +68,6 @@ class UserController extends Controller
         // dd($user->all());
         // $user = user::find($id);
         // $site = site::find($site_id);
-        $site = DB::table('site')->get();
-
         $user = DB::table('users')
                         ->leftjoin('direktorat','direktorat.direktorat_id','users.direktorat')
                         ->leftjoin('departemen','departemen.departemen_id','users.departemen')
