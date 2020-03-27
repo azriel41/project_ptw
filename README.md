@@ -20,8 +20,9 @@ Seng pengen belajar laravel wajib install
 > sytax "git clone"
 > Seng pengen belajar laravel isok remote aku lewat anydesk
 
-<a href="http://backupotak.com/">TUTORIAL</a>
-<a href="https://pornhub.com/">STREAMING VIDEO BEN GAK BOSEN</a>
+-   <a href="http://backupotak.com/">TUTORIAL</a>
+
+-   <a href="https://pornhub.com/">STREAMING VIDEO BEN GAK BOSEN</a>
 
 ## TUTORIAL VIDEO
 
