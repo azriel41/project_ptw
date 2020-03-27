@@ -19,6 +19,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//Department Purchasing
+Route::get('invoice', function () {
+    return view('purchasing/invoice');
+});
+Route::get('supplier', function () {
+    return view('purchasing/supplier');
+});
+Route::get('p_mitem', function () {
+    return view('purchasing/master/item');
+});
+
 //Ruang Training
 Route::get('/user', 'UserController@index')->name('user_index');
 Route::get('/user_create', 'UserController@create')->name('user_create');

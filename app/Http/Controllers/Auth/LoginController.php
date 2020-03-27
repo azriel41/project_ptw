@@ -42,8 +42,8 @@ class LoginController extends Controller
     public function index()
     {
         $user = User::latest()->paginate(5);
-  
-        return view('master.user.index',compact('user'));
+
+        return view('master.user.index', compact('user'));
     }
 
     public function login(Request $request)
@@ -55,23 +55,20 @@ class LoginController extends Controller
         ]);
 
         $fieldType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
-        if(auth()->attempt(array($fieldType => $input['username'], 'password' => $input['password'])))
-        {
+        if (auth()->attempt(array($fieldType => $input['username'], 'password' => $input['password']))) {
             return redirect()->route('home')
-            ->with('success','You are logged in. Good Luck');
-        }
-        else
-        {
-            return redirect()->route('login')->with('alert','Username or Password Are Wrong.');
+                ->with('success', 'You are logged in. Good Luck');
+        } else {
+            return redirect()->route('login')->with('alert', 'Onegai Senpai, masukin yang benar.');
         }
     }
-    
+
     public function logout(Request $request)
     {
         $this->guard()->logout();
         $request->session()->flush();
         $request->session()->regenerate();
-        return redirect()->route('login')->with('info','You are successfully logout.');
+        return redirect()->route('login')->with('info', 'Horayyy senpai, anata sudah keluar.');
         // $this->middleware('guest')->except('logout')->with('info','You are Successfully Logout.');
     }
 }
