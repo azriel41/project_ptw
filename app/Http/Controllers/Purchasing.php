@@ -18,4 +18,9 @@ class Purchasing extends Controller
     {
         return view('purchasing/supplier');
     }
+
+    public function invoiceout()
+    {
+        return view('purchasing/invoiceout');
+    }
 }

@@ -23,6 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/invoice', 'Purchasing@invoice')->name('invoice');
 Route::get('/item', 'Purchasing@item')->name('item');
 Route::get('/supplier', 'Purchasing@supplier')->name('supplier');
+Route::get('/print-invoice', 'Purchasing@invoiceout')->name('invoiceout');
 
 //Ruang Training
 Route::get('/user', 'UserController@index')->name('user_index');

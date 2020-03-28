@@ -16,6 +16,173 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
+                <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                    style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                    <thead align="center">
+                        <tr>
+                            <th>No Invoice</th>
+                            <th>Keterangan</th>
+                            <th>Pengeluaran</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#12345</td>
+                            <td>GAK RO</td>
+                            <td>Rp. 1.000</td>
+                            <td align="center">
+                                <span class="badge badge-success p-2">Diterima</span>
+                            </td>
+                            <td align="center">
+                                <form action="#" method="POST">
+                                    <a class="btn btn-info" href="{{ route('invoiceout') }}"><i class="fas fa-eye"></i>
+                                        Show</a>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#12345</td>
+                            <td>GAK RO</td>
+                            <td>Rp. 1.000</td>
+                            <td align="center">
+                                <span class="badge badge-danger p-2">Ditolak</span>
+                            </td>
+                            <td align="center">
+                                <form action="#" method="POST">
+                                    <a class="btn btn-info disabled" href="javascript:void(0);"><i
+                                            class="fas fa-eye"></i>
+                                        Show</a>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#12345</td>
+                            <td>GAK RO</td>
+                            <td>Rp. 1.000</td>
+                            <td align="center">
+                                <span class="badge badge-success p-2">Diterima</span>
+                            </td>
+                            <td align="center">
+                                <form action="#" method="POST">
+                                    <a class="btn btn-info" href="{{ route('invoiceout') }}"><i class="fas fa-eye"></i>
+                                        Show</a>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#12345</td>
+                            <td>GAK RO</td>
+                            <td>Rp. 1.000</td>
+                            <td align="center">
+                                <span class="badge badge-danger p-2">Ditolak</span>
+                            </td>
+                            <td align="center">
+                                <form action="#" method="POST">
+                                    <a class="btn btn-info disabled" href="javascript:void(0);"><i
+                                            class="fas fa-eye"></i>
+                                        Show</a>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#12345</td>
+                            <td>GAK RO</td>
+                            <td>Rp. 1.000</td>
+                            <td align="center">
+                                <span class="badge badge-success p-2">Diterima</span>
+                            </td>
+                            <td align="center">
+                                <form action="#" method="POST">
+                                    <a class="btn btn-info" href="{{ route('invoiceout') }}"><i class="fas fa-eye"></i>
+                                        Show</a>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#12345</td>
+                            <td>GAK RO</td>
+                            <td>Rp. 1.000</td>
+                            <td align="center">
+                                <span class="badge badge-danger p-2">Ditolak</span>
+                            </td>
+                            <td align="center">
+                                <form action="#" method="POST">
+                                    <a class="btn btn-info disabled" href="javascript:void(0);"><i
+                                            class="fas fa-eye"></i>
+                                        Show</a>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#12345</td>
+                            <td>GAK RO</td>
+                            <td>Rp. 1.000</td>
+                            <td align="center">
+                                <span class="badge badge-success p-2">Diterima</span>
+                            </td>
+                            <td align="center">
+                                <form action="#" method="POST">
+                                    <a class="btn btn-info" href="{{ route('invoiceout') }}"><i class="fas fa-eye"></i>
+                                        Show</a>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#12345</td>
+                            <td>GAK RO</td>
+                            <td>Rp. 1.000</td>
+                            <td align="center">
+                                <span class="badge badge-danger p-2">Ditolak</span>
+                            </td>
+                            <td align="center">
+                                <form action="#" method="POST">
+                                    <a class="btn btn-info disabled" href="javascript:void(0);"><i
+                                            class="fas fa-eye"></i>
+                                        Show</a>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#12345</td>
+                            <td>GAK RO</td>
+                            <td>Rp. 1.000</td>
+                            <td align="center">
+                                <span class="badge badge-success p-2">Diterima</span>
+                            </td>
+                            <td align="center">
+                                <form action="#" method="POST">
+                                    <a class="btn btn-info" href="{{ route('invoiceout') }}"><i class="fas fa-eye"></i>
+                                        Show</a>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#12345</td>
+                            <td>GAK RO</td>
+                            <td>Rp. 1.000</td>
+                            <td align="center">
+                                <span class="badge badge-danger p-2">Ditolak</span>
+                            </td>
+                            <td align="center">
+                                <form action="#" method="POST">
+                                    <a class="btn btn-info disabled" href="javascript:void(0);"><i
+                                            class="fas fa-eye"></i>
+                                        Show</a>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->
+{{-- <div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
 
                 <div class="row">
                     <div class="col-12">
@@ -146,5 +313,27 @@
             </div>
         </div>
     </div> <!-- end col -->
-</div>
+</div> --}}
+@endsection
+
+@section('script')
+<!-- Required datatable js -->
+<script src="{{ URL::asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ URL::asset('plugins/datatables/dataTables.bootstrap4.min.js') }}"></script>
+<!-- Buttons examples -->
+<script src="{{ URL::asset('plugins/datatables/dataTables.buttons.min.js') }}"></script>
+<script src="{{ URL::asset('plugins/datatables/buttons.bootstrap4.min.js') }}"></script>
+<script src="{{ URL::asset('plugins/datatables/jszip.min.js') }}"></script>
+<script src="{{ URL::asset('plugins/datatables/pdfmake.min.js') }}"></script>
+<script src="{{ URL::asset('plugins/datatables/vfs_fonts.js') }}"></script>
+<script src="{{ URL::asset('plugins/datatables/buttons.html5.min.js') }}"></script>
+<script src="{{ URL::asset('plugins/datatables/buttons.print.min.js') }}"></script>
+<script src="{{ URL::asset('plugins/datatables/buttons.colVis.min.js') }}"></script>
+<!-- Responsive examples -->
+<script src="{{ URL::asset('plugins/datatables/dataTables.responsive.min.js') }}"></script>
+<script src="{{ URL::asset('plugins/datatables/responsive.bootstrap4.min.js') }}"></script>
+
+<!-- Datatable init js -->
+<script src="{{ URL::asset('assets/pages/datatables.init.js') }}"></script>
+
 @endsection

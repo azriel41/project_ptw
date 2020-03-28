@@ -8,20 +8,20 @@
 <link href="{{ URL::asset('plugins/datatables/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 
-@section('breadcrumb')  
+@section('breadcrumb')
 <div class="col-sm-6">
     <h4 class="page-title">User</h4>
-</div>                   
+</div>
 @endsection
 
 @section('content')
 @if (session('info'))
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        {{ session('info') }}
-    </div>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    {{ session('info') }}
+</div>
 @endif
 <div class="row">
     <div class="col-12">
@@ -34,57 +34,59 @@
                     </a>
                 </p>
 
-<table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-    <thead align="center">
-        <tr>
-            <th>Nama User</th>
-            <th>Nama Lengkap</th>
-            <th>Email</th>
-            {{-- <th>Status</th> --}}
-            <th>Created Date</th>
-            <th>Aksi</th>
-        </tr>
-        </thead>
-        <tbody>
-            @foreach($user as $user)
-            <tr>
-                <td>{{ $user->username }}</td>
-                <td>{{ $user->fullname }}</td>
-                <td>{{ $user->email }}</td>
-                {{-- <td align="center">
+                <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                    style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                    <thead align="center">
+                        <tr>
+                            <th>Nama User</th>
+                            <th>Nama Lengkap</th>
+                            <th>Email</th>
+                            {{-- <th>Status</th> --}}
+                            <th>Created Date</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach($user as $user)
+                        <tr>
+                            <td>{{ $user->username }}</td>
+                            <td>{{ $user->fullname }}</td>
+                            <td>{{ $user->email }}</td>
+                            {{-- <td align="center">
                     @if ($user->user_status == 1)
                         Aktif
                         @else
                         Tidak Aktif
                     @endif
                 </td> --}}
-                <td align="center">{{ date('d-M-Y',strtotime($user->created_at)) }}</td>
-                <td align="center">
-                    <form action="{{ route('user_destroy',['id'=>$user->id]) }}" method="POST">
-                        {{ csrf_field() }}
-                        {{ method_field('POST') }}
-                    
-                    <a class="btn btn-info" href="{{ route('user_show',['id'=>$user->id]) }}"><i class="fas fa-eye"></i> Show</a>
-    
-                    <a class="btn btn-primary" href="{{ route('user_edit',['id'=>$user->id]) }}"><i class="fas fa-edit"></i> Edit</a>
-                    
-                    <button type="submit"  class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
-                    </form>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+                            <td align="center">{{ date('d-M-Y',strtotime($user->created_at)) }}</td>
+                            <td align="center">
+                                <form action="{{ route('user_destroy',['id'=>$user->id]) }}" method="POST">
+                                    {{ csrf_field() }}
+                                    {{ method_field('POST') }}
 
-</div>
-</div>
-</div> <!-- end col -->
+                                    <a class="btn btn-info" href="{{ route('user_show',['id'=>$user->id]) }}"><i
+                                            class="fas fa-eye"></i> Show</a>
+
+                                    <a class="btn btn-primary" href="{{ route('user_edit',['id'=>$user->id]) }}"><i
+                                            class="fas fa-edit"></i> Edit</a>
+
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"
+                                            aria-hidden="true"></i> Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div> <!-- end col -->
 </div> <!-- end row -->
-
-                        
 @endsection
 
-@section('script')      
+@section('script')
 <!-- Required datatable js -->
 <script src="{{ URL::asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
 <script src="{{ URL::asset('plugins/datatables/dataTables.bootstrap4.min.js') }}"></script>
@@ -102,6 +104,6 @@
 <script src="{{ URL::asset('plugins/datatables/responsive.bootstrap4.min.js') }}"></script>
 
 <!-- Datatable init js -->
-<script src="{{ URL::asset('assets/pages/datatables.init.js') }}"></script>   
+<script src="{{ URL::asset('assets/pages/datatables.init.js') }}"></script>
 
 @endsection
