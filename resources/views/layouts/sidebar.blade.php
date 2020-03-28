@@ -51,7 +51,7 @@
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-key"></i><span> Master<span
                                 class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href="p_mitem">Item</a></li>
+                        <li><a href="item">Item</a></li>
                         <li><a href="charts-morris">Supplier</a></li>
                     </ul>
                 </li>
