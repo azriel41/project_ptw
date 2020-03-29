@@ -2,11 +2,10 @@
 
 @section('breadcrumb')
 <div class="col-sm-6">
-    <h4 class="page-title">Data Supplier</h4>
+    <h4 class="page-title">Master Item</h4>
     <ol class="breadcrumb mb-0">
-        <li class="breadcrumb-item"><a href="javascript: void(0);">Purchasing</a></li>
-        <li class="breadcrumb-item"><a href="javascript: void(0);">Data</a></li>
-        <li class="breadcrumb-item active">Supplier</li>
+        <li class="breadcrumb-item"><a href="javascript: void(0);">Master</a></li>
+        <li class="breadcrumb-item active">Item</li>
     </ol>
 </div>
 @endsection
@@ -16,106 +15,89 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <p>
-                    <a href="{{ route('master_supplier') }}" class="btn btn-primary">
-                        <i class="la la-plus"></i>
-                        Tambah
-                    </a>
-                </p>
 
                 <table id="datatable" class="table table-bordered dt-responsive nowrap"
                     style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                     <thead align="center">
                         <tr>
-                            <th>Nama Supplier</th>
-                            <th>Alamat</th>
-                            <th>Email</th>
-                            <th>No HP</th>
+                            <th>Nama</th>
+                            <th>Jenis</th>
+                            <th>Departemen</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Warung</td>
-                            <td>GAK RO</td>
-                            <td>Email</td>
-                            <td>HP</td>
+                            <td>Permen</td>
+                            <td>Bahan Produksi</td>
+                            <td>Produksi</td>
                             <td align="center">
                                 <form action="#" method="POST">
                                     <a class="btn btn-info" href="javascript:void(0);"><i class="fas fa-eye"></i>
                                         Show</a>
-                                    <a class="btn btn-primary disabled" href="javascript:void(0);"><i
-                                            class="fas fa-edit"></i>
+                                    <a class="btn btn-primary" href="javascript:void(0);"><i class="fas fa-edit"></i>
                                         Edit</a>
-                                    <button type="submit" class="btn btn-danger" disabled><i class="fa fa-trash"
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"
                                             aria-hidden="true"></i> Delete</button>
                                 </form>
                             </td>
                         </tr>
                         <tr>
-                            <td>Warung</td>
-                            <td>GAK RO</td>
-                            <td>Email</td>
-                            <td>HP</td>
+                            <td>Permen</td>
+                            <td>Bahan Produksi</td>
+                            <td>Produksi</td>
                             <td align="center">
                                 <form action="#" method="POST">
                                     <a class="btn btn-info" href="javascript:void(0);"><i class="fas fa-eye"></i>
                                         Show</a>
-                                    <a class="btn btn-primary disabled" href="javascript:void(0);"><i
-                                            class="fas fa-edit"></i>
+                                    <a class="btn btn-primary" href="javascript:void(0);"><i class="fas fa-edit"></i>
                                         Edit</a>
-                                    <button type="submit" class="btn btn-danger" disabled><i class="fa fa-trash"
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"
                                             aria-hidden="true"></i> Delete</button>
                                 </form>
                             </td>
                         </tr>
                         <tr>
-                            <td>Warung</td>
-                            <td>GAK RO</td>
-                            <td>Email</td>
-                            <td>HP</td>
+                            <td>Permen</td>
+                            <td>Bahan Produksi</td>
+                            <td>Produksi</td>
                             <td align="center">
                                 <form action="#" method="POST">
                                     <a class="btn btn-info" href="javascript:void(0);"><i class="fas fa-eye"></i>
                                         Show</a>
-                                    <a class="btn btn-primary disabled" href="javascript:void(0);"><i
-                                            class="fas fa-edit"></i>
+                                    <a class="btn btn-primary" href="javascript:void(0);"><i class="fas fa-edit"></i>
                                         Edit</a>
-                                    <button type="submit" class="btn btn-danger" disabled><i class="fa fa-trash"
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"
                                             aria-hidden="true"></i> Delete</button>
                                 </form>
                             </td>
                         </tr>
                         <tr>
-                            <td>Warung</td>
-                            <td>GAK RO</td>
-                            <td>Email</td>
-                            <td>HP</td>
+                            <td>Permen</td>
+                            <td>Bahan Produksi</td>
+                            <td>Produksi</td>
                             <td align="center">
                                 <form action="#" method="POST">
                                     <a class="btn btn-info" href="javascript:void(0);"><i class="fas fa-eye"></i>
                                         Show</a>
-                                    <a class="btn btn-primary disabled" href="javascript:void(0);"><i
-                                            class="fas fa-edit"></i>
+                                    <a class="btn btn-primary" href="javascript:void(0);"><i class="fas fa-edit"></i>
                                         Edit</a>
-                                    <button type="submit" class="btn btn-danger" disabled><i class="fa fa-trash"
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"
                                             aria-hidden="true"></i> Delete</button>
                                 </form>
                             </td>
                         </tr>
                         <tr>
-                            <td>Warung</td>
-                            <td>GAK RO</td>
-                            <td>Email</td>
-                            <td>HP</td>
+                            <td>Permen</td>
+                            <td>Bahan Produksi</td>
+                            <td>Produksi</td>
                             <td align="center">
                                 <form action="#" method="POST">
                                     <a class="btn btn-info" href="javascript:void(0);"><i class="fas fa-eye"></i>
                                         Show</a>
-                                    <a class="btn btn-primary disabled" href="javascript:void(0);"><i
-                                            class="fas fa-edit"></i>
+                                    <a class="btn btn-primary" href="javascript:void(0);"><i class="fas fa-edit"></i>
                                         Edit</a>
-                                    <button type="submit" class="btn btn-danger" disabled><i class="fa fa-trash"
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"
                                             aria-hidden="true"></i> Delete</button>
                                 </form>
                             </td>

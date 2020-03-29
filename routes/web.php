@@ -21,9 +21,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Department Purchasing
 Route::get('/invoice', 'Purchasing@invoice')->name('invoice');
-Route::get('/item', 'Purchasing@item')->name('item');
+Route::get('/master-item', 'Purchasing@item')->name('master_item');
+Route::get('/master-supplier', 'Purchasing@msupplier')->name('master_supplier');
 Route::get('/supplier', 'Purchasing@supplier')->name('supplier');
 Route::get('/print-invoice', 'Purchasing@invoiceout')->name('invoiceout');
+Route::get('/pembelian', 'Purchasing@buy')->name('buy');
 
 //Ruang Training
 Route::get('/user', 'UserController@index')->name('user_index');

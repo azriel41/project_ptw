@@ -5,8 +5,8 @@
     <h4 class="page-title">Master Item</h4>
     <ol class="breadcrumb mb-0">
         <li class="breadcrumb-item"><a href="javascript: void(0);">Purchasing</a></li>
-        <li class="breadcrumb-item"><a href="javascript: void(0);">Master</a></li>
-        <li class="breadcrumb-item active">Item</li>
+        <li class="breadcrumb-item"><a href="javascript: void(0);">Form</a></li>
+        <li class="breadcrumb-item active">Pembelian</li>
     </ol>
 </div>
 @endsection
@@ -56,18 +56,18 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="example-number-input" class="col-sm-2 col-form-label">Number</label>
+            <label for="example-number-input" class="col-sm-2 col-form-label">Kebutuhan</label>
             <div class="col-sm-10">
-                <input class="form-control" type="number" value="42" id="example-number-input">
+                <input class="form-control" type="number" value="0" id="example-number-input">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Select</label>
+            <label class="col-sm-2 col-form-label">Jenis</label>
             <div class="col-sm-10">
                 <select class="form-control">
-                    <option>Select</option>
-                    <option>Large select</option>
-                    <option>Small select</option>
+                    <option>Bahan Produksi</option>
+                    <option>Jasa</option>
+                    <option>Alat Tulis Kantor</option>
                 </select>
             </div>
         </div>
