@@ -57,16 +57,16 @@
                             <form class="form-horizontal mt-4" method="POST" action="{{ route('login') }}">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="username">Username</label>
+                                    <label for="username">Nama Pengguna</label>
                                     <input type="text" class="form-control @error('username') is-invalid @enderror"
-                                        name="username" value="{{ old('username') }}" placeholder="Masukkan username"
+                                        name="username" value="{{ old('username') }}" placeholder="Masukkan Nama Pengguna"
                                         required="required" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <label for="userpassword">Password</label>
+                                    <label for="userpassword">Kata Sandi</label>
                                     <input type="password" name="password"
                                         class="form-control @error('password') is-invalid @enderror"
-                                        placeholder="Masukkan password" required="required">
+                                        placeholder="Masukkan Kata Sandi" required="required">
                                 </div>
                                 <div class="float-right text-right">
                                     <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Log
