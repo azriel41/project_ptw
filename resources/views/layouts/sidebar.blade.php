@@ -62,7 +62,7 @@
                                 class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
                         <li><a href="{{ route('buy') }}">Pembelian</a></li>
-                        <li><a href="charts-morris">Pre Order</a></li>
+                        <li><a href="charts-morris">Robot</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Penjualan</li>
