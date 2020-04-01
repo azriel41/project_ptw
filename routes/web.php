@@ -35,3 +35,12 @@ Route::get('/user_show/{id}', 'UserController@show')->name('user_show');
 Route::post('/user_store', 'UserController@store')->name('user_store');
 Route::post('/user_update/{id}', 'UserController@update')->name('user_update');
 Route::post('/user_destroy/{id}', 'UserController@destroy')->name('user_destroy');
+
+//Master DepartemenController
+Route::get('/departemen', 'departemenController@index')->name('departemen_index');
+Route::get('/departemen_create', 'DepartemenController@create')->name('departemen_create');
+Route::get('/departemen_edit/{id}', 'DepartemenController@edit')->name('departemen_edit');
+Route::get('/departemen_show/{id}', 'DepartemenController@show')->name('departemen_show');
+Route::post('/departemen_store', 'DepartemenController@store')->name('departemen_store');
+Route::post('/departemen_update/{id}', 'DepartemenController@update')->name('departemen_update');
+Route::post('/departemen_destroy/{id}', 'DepartemenController@destroy')->name('departemen_destroy');
