@@ -37,7 +37,7 @@ Route::post('/user_update/{id}', 'UserController@update')->name('user_update');
 Route::post('/user_destroy/{id}', 'UserController@destroy')->name('user_destroy');
 
 //Master DepartemenController
-Route::get('/departemen', 'departemenController@index')->name('departemen_index');
+Route::get('/departemen', 'DepartemenController@index')->name('departemen_index');
 Route::get('/departemen_create', 'DepartemenController@create')->name('departemen_create');
 Route::get('/departemen_edit/{id}', 'DepartemenController@edit')->name('departemen_edit');
 Route::get('/departemen_show/{id}', 'DepartemenController@show')->name('departemen_show');

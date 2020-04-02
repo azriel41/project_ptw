@@ -19,18 +19,18 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">        
-                    <form method="POST" action="{{ route('user_store') }}">
+                    <form method="POST" action="{{ route('departemen_store') }}">
                         {{ csrf_field() }}
                         <div class="form-group row">
                         <label for="example-text-input" class="col-sm-2 col-form-label">Kode Departemen</label>
                         <div class="col-sm-10">
-                            <input type="text" name="kode_departemen" class="form-control" placeholder="Masukan Nama Departemen" required>
+                            <input type="text" name="kode" class="form-control" placeholder="Masukan Kode Departemen" required>
                         </div>
                     </div>
                      <div class="form-group row">
                         <label for="example-text-input" class="col-sm-2 col-form-label">Nama Departemen</label>
                         <div class="col-sm-10">
-                            <input type="text" name="nama_departemen" class="form-control" placeholder="Masukan Nama Departemen" required>
+                            <input type="text" name="nama" class="form-control" placeholder="Masukan Nama Departemen" required>
                         </div>
                     </div>
                      <div class="form-group row">

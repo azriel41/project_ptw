@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Departemen;
 use Illuminate\Http\Request;
 use DB;
 
@@ -17,14 +18,14 @@ class DepartemenController extends Controller
     public function index()
     
         {
-            $user = user::all();
             return view('master.departemen.index');
-        }
-    
 
+        }
+        
    
     public function create()
     {
+
             return view('master.departemen.create');
         // return view('master.user.create');
     }
@@ -33,15 +34,17 @@ class DepartemenController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'kode_departemen' => 'required',
-            'nama_departemen' => 'required',
+            'kode' => 'required',
+            'nama' => 'required',
             'keterangan' => 'required',
         ]);
-  
-        master_departemen::create($request->all());
+        $input = $request->all();
+        $input['id'] = Departemen::max('id')+1;
+        Departemen::create($input);
         return redirect()->route('departemen_index')
                         ->with('info','User created successfully.');
     }
+
 
     public function show(user $user)
     {
