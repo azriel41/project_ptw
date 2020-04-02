@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server version:               10.1.32-MariaDB - mariadb.org binary distribution
--- Server OS:                    Win32
--- HeidiSQL Version:             9.4.0.5125
+-- Server version:               10.3.16-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win64
+-- HeidiSQL Version:             10.3.0.5771
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -16,6 +16,19 @@
 CREATE DATABASE IF NOT EXISTS `inaco` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `inaco`;
 
+-- Dumping structure for table inaco.departemen
+CREATE TABLE IF NOT EXISTS `departemen` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `kode` varchar(255) DEFAULT NULL,
+  `nama_departemen` varchar(255) DEFAULT NULL,
+  `keterangan` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Dumping data for table inaco.departemen: ~0 rows (approximately)
+/*!40000 ALTER TABLE `departemen` DISABLE KEYS */;
+/*!40000 ALTER TABLE `departemen` ENABLE KEYS */;
+
 -- Dumping structure for table inaco.failed_jobs
 CREATE TABLE IF NOT EXISTS `failed_jobs` (
   `id` bigint(20) unsigned NOT NULL,
@@ -23,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `failed_jobs` (
   `queue` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `failed_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `failed_at` timestamp NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -75,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `last_session_id` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table inaco.users: ~1 rows (approximately)
+-- Dumping data for table inaco.users: ~0 rows (approximately)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 REPLACE INTO `users` (`id`, `username`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `fullname`, `nik`, `hakakses`, `last_session_id`) VALUES
 	(1, 'admin', 'admin@gmail.com', NULL, '$2y$10$PLXSl/iGTjiw6Z0lAbYllueOZ03CCvRmvGL54RS9wNw75WbhqdF8C', NULL, '2020-02-13 06:51:15', '2020-02-13 06:51:15', 'administrator', 12345, 1, '');
