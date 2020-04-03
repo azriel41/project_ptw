@@ -6,7 +6,7 @@
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
             <ul class="metismenu" id="side-menu">
-                <li class="menu-title">TEST TEST</li>
+                <li class="menu-title">TEST gan</li>
                 <li>
                     <a href="{{ 'home' }}" class="waves-effect">
                         <i class="ti-home"></i> <span> Beranda </span>
