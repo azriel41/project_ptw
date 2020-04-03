@@ -6,7 +6,7 @@
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
             <ul class="metismenu" id="side-menu">
-                <li class="menu-title">TEST gan</li>
+                <li class="menu-title">Halaman Utama</li>
                 <li>
                     <a href="{{ 'home' }}" class="waves-effect">
                         <i class="ti-home"></i> <span> Beranda </span>
@@ -25,7 +25,7 @@
                 <li class="menu-title">Human Resource</li>
                 <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Absensi
-                        <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
+                            <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
                         </span></a>
                     <ul class="submenu">
                         <li><a href="charts-morris">Jadwal Karyawan</a></li>
