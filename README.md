@@ -1,5 +1,9 @@
 ## USAHAKAN DILIHAT SEBELUM COMMIT ATAU PUSH, BERIKAN KETERANGAN PADA COMMIT YA KNTL
 
+
+Ayo rek.. ndang mari rekk... 
+
+
 ## All Departement
 
 ## About Laravel
