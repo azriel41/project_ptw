@@ -16,6 +16,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/faq', 'HomeController@faq')->name('faq');
 
 //Department Purchasing
 Route::get('/invoice', 'Purchasing@invoice')->name('invoice');

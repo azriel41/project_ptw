@@ -84,7 +84,8 @@
                 </li>
                 <li class="menu-title">Panduan</li>
                 <li>
-                    <a href="calendar" class="waves-effect"><i class="ti-calendar"></i><span> Panduan </span></a>
+                    <a href="{{ route('faq') }}" class="waves-effect"><i class="ti-calendar"></i><span> Panduan
+                        </span></a>
                 </li>
             </ul>
         </div>

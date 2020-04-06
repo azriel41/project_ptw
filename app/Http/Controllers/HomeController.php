@@ -28,4 +28,9 @@ class HomeController extends Controller
         // Alert::success('pesan yang ingin disampaikan', 'Judul Pesan');
         return view('home');
     }
+
+    public function faq()
+    {
+        return view('faq');
+    }
 }
