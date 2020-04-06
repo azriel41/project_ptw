@@ -1,7 +1,12 @@
 ## USAHAKAN DILIHAT SEBELUM COMMIT ATAU PUSH, BERIKAN KETERANGAN PADA COMMIT YA KNTL
 
-
-Ayo rek.. ndang mari rekk... 
+## CARA MENGGUNAKAN APLIKASI PERTAMA KALI
+1. clone aplikasi -> cara e takok master deny dan baginda ravi
+2. setelah clone, jalankan skrip "composer install" -> pastikno wes install composer
+3. setelah iku, jalankan skrip "php artisan migrate"
+4. terus jalankan maneh "php artisan db:seed --class=DatabaseSeeder"
+5. setelah itu silahkan login  user = admin & password = password
+6. thx gan
 
 
 ## All Departement
