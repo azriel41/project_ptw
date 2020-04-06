@@ -20,16 +20,34 @@
                         <li><a href="{{ route('master_supplier') }}">Supplier</a></li>
                         <li><a href="{{ route('user_index') }}">User</a></li>
                         <li><a href="{{ route('departemen_index') }}">Departemen</a></li>
+                        <li><a href="{{ route('karyawan_index') }}">Karyawan</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Human Resource</li>
-                <li>
+                 <li>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Karyawan
+                            <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
+                        </span></a>
+                    <ul class="submenu">
+                        <li><a href="charts-morris">Data Calon Karyawann</a></li>
+                        <li><a href="charts-morris">Data Karyawan</a></li>
+                    </ul>
+                </li>
+                 <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Absensi
                             <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
                         </span></a>
                     <ul class="submenu">
                         <li><a href="charts-morris">Jadwal Karyawan</a></li>
                         <li><a href="charts-morris">Sisa Cuti</a></li>
+                    </ul>
+                </li>
+                 <li>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Payroll
+                            <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
+                        </span></a>
+                    <ul class="submenu">
+                        <li><a href="charts-morris">Gaji</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Produksi</li>

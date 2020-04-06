@@ -17,9 +17,9 @@
 <div class="col-sm-6">
     <h4 class="page-title">Halaman Utama</h4>
     <h4 class="page-title">Yang Baca Gay</h4>
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item active">Selamat Datang di TEMPAT PARA WIBU</li>
-    </ol>
+    <div>
+        <img src="{{ URL::asset('assets/images/IMG_7245.jpg') }}" height="700" width="1000">
+    </div>
 </div>
 @endsection
 

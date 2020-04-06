@@ -35,6 +35,23 @@ Route::post('/user_store', 'UserController@store')->name('user_store');
 Route::post('/user_update/{id}', 'UserController@update')->name('user_update');
 Route::post('/user_destroy/{id}', 'UserController@destroy')->name('user_destroy');
 
+//Master KaryawanController
+Route::get('/karyawan', 'KaryawanController@index')->name('karyawan_index');
+Route::get('/karyawan_create', 'KaryawanController@create')->name('karyawan_create');
+Route::get('/karyawan_edit/{id}', 'KaryawanController@edit')->name('karyawan_edit');
+Route::get('/karyawan_show/{id}', 'KaryawanController@show')->name('karyawan_show');
+Route::post('/karyawan_store', 'KaryawanController@store')->name('karyawan_store');
+Route::post('/karyawan_update/{id}', 'KaryawanController@update')->name('karyawan_update');
+
+//Ruang Training
+Route::get('/akun', 'master/akunController@index')->name('akun_index');
+Route::get('/akun_create', 'master/akunController@create')->name('akun_create');
+Route::get('/akun_edit/{id}', 'master/akunController@edit')->name('akun_edit');
+Route::get('/akun_show/{id}', 'master/akunController@show')->name('akun_show');
+Route::post('/akun_store', 'master/akunController@store')->name('akun_store');
+Route::post('/akun_update/{id}', 'master/akunController@update')->name('akun_update');
+Route::post('/akun_destroy/{id}', 'master/akunController@destroy')->name('akun_destroy');
+
 //Master DepartemenController
 Route::get('/departemen', 'DepartemenController@index')->name('departemen_index');
 Route::get('/departemen_create', 'DepartemenController@create')->name('departemen_create');
@@ -43,3 +60,4 @@ Route::get('/departemen_show/{id}', 'DepartemenController@show')->name('departem
 Route::post('/departemen_store', 'DepartemenController@store')->name('departemen_store');
 Route::post('/departemen_update/{id}', 'DepartemenController@update')->name('departemen_update');
 Route::post('/departemen_destroy/{id}', 'DepartemenController@destroy')->name('departemen_destroy');
+

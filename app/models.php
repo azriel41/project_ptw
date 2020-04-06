@@ -93,6 +93,11 @@ class models extends model
       return $Waktu;
   }
 
+  public function Karyawan()
+  {
+      $Karyawan = new Karyawan(); 
 
+      return $Karyawan;
+  }
 
 }
