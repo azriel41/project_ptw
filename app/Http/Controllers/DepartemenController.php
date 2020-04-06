@@ -2,17 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\Departemen;
 use Illuminate\Http\Request;
+use DB;
 
 class DepartemenController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    
 
     public function __construct()
     {
@@ -22,103 +18,79 @@ class DepartemenController extends Controller
     public function index()
     
         {
-        // $departemen = Departemen::latest()->paginate(5);
-            $departemen = departemen::all();
-        return view('master.departemen.index',compact('departemen'));
-    }
-    
+            return view('master.departemen.index');
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+        }
+        
+   
     public function create()
     {
-        return view('master.departemen.create');
+
+            return view('master.departemen.create');
+        // return view('master.user.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
         $request->validate([
-            'departemen_name' => 'required',
-            'departemen_status' => 'required',
+            'kode' => 'required',
+            'nama' => 'required',
+            'keterangan' => 'required',
         ]);
-  
-        Departemen::create($request->all());
+        $input = $request->all();
+        $input['id'] = Departemen::max('id')+1;
+        Departemen::create($input);
         return redirect()->route('departemen_index')
-                        ->with('info','Departemen created successfully.');
+                        ->with('info','User created successfully.');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Departemen  $departemen
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Departemen $departemen,$id)
+
+    public function show(user $user)
     {
-        $departemen = Departemen::where('departemen_id',$id)->first();
-        // return $id;
         return view('master.departemen.show',compact('departemen'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Departemen  $departemen
-     * @return \Illuminate\Http\Response
-     */
+   
      public function edit($id)
     {
-         // $departemen = Departemen::where('departemen_id',$id)->first();
-        // dd($departemen->all());
-        $departemen = Departemen::find($id);
-        // return view('master.departemen.edit',compact('departemen'));
-        return view('master.departemen.edit',['departemen'=>$departemen]);
+        return view('master.departemen.edit',compact('departemen'));
+
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Departemen  $departemen
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request,$id)
     {
-        // dd($departemen->all());
+        // dd($user->all());
        $request->validate([
-            'departemen_name' => 'required',
-            'departemen_status' => 'required',
+            'kode_departemen' => 'required',
+            'nama_departemen' => 'required',
+            'keterangan' => 'required',
         ]);
   
-        Departemen::where('departemen_id',$id)->update([
-                    'departemen_name' => $request->departemen_name,
-                    'departemen_status' => $request->departemen_status,
+        departemen::where('id',$id)->update([
+                    'kode_departemen' => $request->kode_departemen,
+                    'nama_departemen' => $request->nama_departemen,
+                    'keterangan' => $request->keterangan,
+                    
                 ]);
    
         return redirect()->route('departemen_index')
-                        ->with('info','Departemen updated successfully.');
+                        ->with('info','User updated successfully.');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Departemen  $departemen
+     * @param  \App\user  $user
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request,$id)
     {
-        Departemen::where('departemen_id',$id)->delete();
+        departemen::where('id',$id)->delete();
   
         return redirect()->route('departemen_index')
-                        ->with('info','Departemen deleted successfully');
+                        ->with('info','User deleted successfully');
     }
+
 }

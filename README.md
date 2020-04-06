@@ -1,47 +1,8 @@
 ## USAHAKAN DILIHAT SEBELUM COMMIT ATAU PUSH, BERIKAN KETERANGAN PADA COMMIT YA KNTL
 
+## [TUTORIAL LARAVEL DISINI GAN](https://github.com/azriel41/project_ptw/wiki/Tutorial)
+
 ## All Departement
-
-# TUTORIAL
-
-Seng pengen belajar laravel wajib install
-
-1. <a href="https://getcomposer.org/Composer-Setup.exe">Composer</a>
-2. <a href="https://www.apachefriends.org/xampp-files/7.4.3/xampp-windows-x64-7.4.3-0-VC15-installer.exe">Xampp</a>
-3. <a href="https://nodejs.org/dist/v12.16.1/node-v12.16.1-x64.msi">Npm / Node JS</a>
-4. <a href="https://git-scm.com/download/win">Git</a>
-5. Code Editor
-   ==> <a href="https://code.visualstudio.com/download">VSCODE</a>
-   ==> <a href="https://www.sublimetext.com/3">SUBLIME</a>
-6. <a href="https://github.com/join">Gawe akun github</a>
-
-> Lak mari ngirim username github nak deny atau nak grub ben isok collab project e
-> Clone repo <a href="https://github.com/azriel41/project_ptw.git">https://github.com/azriel41/project_ptw.git</a> (IKI REPONE)
-> sytax "git clone"
-> Seng pengen belajar laravel isok remote aku lewat anydesk
-
--   <a href="http://backupotak.com/">TUTORIAL</a>
-
--   <a href="https://pornhub.com/">STREAMING VIDEO BEN GAK BOSEN</a>
-
-## TUTORIAL VIDEO
-
-<a href="https://www.youtube.com/watch?v=-82XvDLsGKc&list=PLRKMmwY3-5MzQzlYKzc9-zymaCXaRfwOF">1</a>
-
-<a href="https://www.youtube.com/watch?v=gVHsZbnSkbc&list=PLjCsQGDzSNNuDT87jBzveotGwjK1ht2Y7">2</a>
-
-<a href="https://www.youtube.com/watch?v=poGkVaLUd30&list=PLOpjxspexSIlL3jDsW5jlA75tJUP_fSW-">3</a>
-
-# TUTORIAL ENDED
-
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
 ## About Laravel
 

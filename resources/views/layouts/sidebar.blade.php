@@ -19,15 +19,17 @@
                         <li><a href="{{ route('master_item') }}">Item</a></li>
                         <li><a href="{{ route('master_supplier') }}">Supplier</a></li>
                         <li><a href="{{ route('user_index') }}">User</a></li>
+                        <li><a href="{{ route('departemen_index') }}">Departemen</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Human Resource</li>
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Lebokno Dewe
-                            Coy <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Absensi
+                            <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
                         </span></a>
                     <ul class="submenu">
-                        <li><a href="charts-morris">Lebokno Dewe Coy</a></li>
+                        <li><a href="charts-morris">Jadwal Karyawan</a></li>
+                        <li><a href="charts-morris">Sisa Cuti</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Produksi</li>

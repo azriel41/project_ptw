@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Departemen extends Model
 {
     protected $table = "departemen";
-    protected $primaryKey = 'departemen_id';
-
-    protected $fillable = ['departemen_name','departemen_status','created_by','created_date'];
+    protected $primaryKey = 'id';
+    protected $fillable = ['id','kode','nama','created_at', 'updated_at'];
 }
