@@ -1,4 +1,3 @@
-
 /* ==============
   Extra pages
 ===================*/
@@ -6,14 +5,15 @@
 
 /************** Pricing **************/
 
-.pricing-box{
-    .pricing-icon{
-        i{
+.pricing-box {
+    .pricing-icon {
+        i {
             font-size: 30px;
             padding: 14px;
         }
     }
-    .pricing-features{
+
+    .pricing-features {
         padding: 0px 12px;
     }
 }
@@ -21,17 +21,18 @@
 
 /***************** Faqs *******************/
 
-.faq{
+.faq {
     position: relative;
-    .card-header{
-        border:none;
+
+    .card-header {
+        border: none;
         background: transparent;
         padding: 22px 20px;
     }
-} 
+}
 
-.accordion{
-    .card{
+.accordion {
+    .card {
         border-bottom: 1px solid $gray-200 !important;
         border-radius: 4px !important;
         box-shadow: none;
@@ -56,45 +57,49 @@ a.faq[data-toggle=collapse]:before {
 
 /**************** maintenance *******************/
 
-.maintenance-img{
-    img{
+.maintenance-img {
+    img {
         max-width: 320px;
     }
 }
 
-.maintenance-box{
-    i{
+.maintenance-box {
+    i {
         font-size: 28px;
     }
 }
 
 /**************** coming soon *******************/
 
-.coming-watch{
+.coming-watch {
     div {
         display: inline-block;
-        .card{
+
+        .card {
             margin: 0px 15px 15px 15px;
-            .countdown-num
-            {
+
+            .countdown-num {
                 font-weight: 500;
                 color: $primary;
             }
         }
+
         span {
             width: 150px;
             display: block;
+
             &:first-child {
                 height: 60px;
                 font-weight: 300;
                 font-size: 3em;
                 line-height: 48px;
             }
+
             &:last-child {
                 padding-top: 14px;
                 font-size: 0.9em;
             }
-        }        
+        }
     }
 }
 
@@ -111,6 +116,7 @@ a.faq[data-toggle=collapse]:before {
         padding-left: 30px;
         border-radius: 30px;
     }
+
     button {
         position: absolute;
         top: 7px;
@@ -119,6 +125,7 @@ a.faq[data-toggle=collapse]:before {
         border-radius: 30px;
         padding: 9px 30px;
     }
+
     form {
         position: relative;
         max-width: 600px;
@@ -139,7 +146,7 @@ a.faq[data-toggle=collapse]:before {
     vertical-align: middle;
 }
 
-.ex-pages{
+.ex-pages {
     position: relative;
     height: 100vh;
 }

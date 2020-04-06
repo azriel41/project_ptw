@@ -70,19 +70,11 @@
                 </li>
                 <li class="menu-title">Purchasing</li>
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-archive"></i><span> Data<span
-                                class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
-                    <ul class="submenu">
-                        <li><a href="{{ route('supplier') }}">Supplier</a></li>
-                        <li><a href="{{ route('invoice') }}">Faktur/Invoice</a></li>
-                    </ul>
-                </li>
-                <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-receipt"></i><span> Form<span
                                 class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href="{{ route('buy') }}">Pembelian</a></li>
-                        <li><a href="charts-morris">Pre Order</a></li>
+                        <li><a href="{{ route('buy') }}">Pembelian (SPP)</a></li>
+                        <li><a href="charts-morris">Faktur (Jasa)</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Penjualan</li>
@@ -110,7 +102,8 @@
                 </li>
                 <li class="menu-title">Panduan</li>
                 <li>
-                    <a href="calendar" class="waves-effect"><i class="ti-calendar"></i><span> Panduan </span></a>
+                    <a href="{{ route('faq') }}" class="waves-effect"><i class="ti-calendar"></i><span> Panduan
+                        </span></a>
                 </li>
             </ul>
         </div>
