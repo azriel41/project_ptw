@@ -34,6 +34,14 @@ Route::post('/user_store', 'UserController@store')->name('user_store');
 Route::post('/user_update/{id}', 'UserController@update')->name('user_update');
 Route::post('/user_destroy/{id}', 'UserController@destroy')->name('user_destroy');
 
+//Master KaryawanController
+Route::get('/karyawan', 'KaryawanController@index')->name('karyawan_index');
+Route::get('/karyawan_create', 'KaryawanController@create')->name('karyawan_create');
+Route::get('/karyawan_edit/{id}', 'KaryawanController@edit')->name('karyawan_edit');
+Route::get('/karyawan_show/{id}', 'KaryawanController@show')->name('karyawan_show');
+Route::post('/karyawan_store', 'KaryawanController@store')->name('karyawan_store');
+Route::post('/karyawan_update/{id}', 'KaryawanController@update')->name('karyawan_update');
+
 //Master DepartemenController
 Route::get('/departemen', 'DepartemenController@index')->name('departemen_index');
 Route::get('/departemen_create', 'DepartemenController@create')->name('departemen_create');
@@ -42,3 +50,5 @@ Route::get('/departemen_show/{id}', 'DepartemenController@show')->name('departem
 Route::post('/departemen_store', 'DepartemenController@store')->name('departemen_store');
 Route::post('/departemen_update/{id}', 'DepartemenController@update')->name('departemen_update');
 Route::post('/departemen_destroy/{id}', 'DepartemenController@destroy')->name('departemen_destroy');
+
+
