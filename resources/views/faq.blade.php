@@ -18,16 +18,15 @@
                         <a data-toggle="collapse" href="#collapseOne" class="faq collapsed" aria-expanded="false"
                             aria-controls="collapseOne">
                             <div class="card-header text-dark" id="headingOne">
-                                <h6 class="m-0 font-size-16">What is Lorem Ipsum?</h6>
+                                <h6 class="m-0 font-size-16">Apa Itu SPP?</h6>
                             </div>
                         </a>
 
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                             data-parent="#accordionExample" style="">
                             <div class="card-body">
-                                <p class="mb-0 faq-ans">The new common language will be more simple and
-                                    regular than the existing European languages. It will be as simple as Occidental; in
-                                    fact, it will be Occidental.</p>
+                                <p class="mb-0 faq-ans">SPP merupakan kepanjangan dari Surat Permintaan Pembelian yang
+                                    berguna untuk membuat atau meminta pembelian kepada departemen purchasing.</p>
                             </div>
                         </div>
                     </div>
@@ -37,15 +36,14 @@
                         <a data-toggle="collapse" href="#collapseTwo" class="faq collapsed" aria-expanded="false"
                             aria-controls="collapseTwo">
                             <div class="card-header text-dark" id="headingTwo">
-                                <h6 class="m-0 font-size-16">Where does it come from?</h6>
+                                <h6 class="m-0 font-size-16">Apa Itu Faktur Pembelian?</h6>
                             </div>
                         </a>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <p class="mb-0 faq-ans">Everyone realizes why a new common language would be
-                                    desirable: one could refuse to pay expensive translators. To achieve this, it would
-                                    be necessary to have uniform grammar</p>
+                                <p class="mb-0 faq-ans">Faktur pembelian adalah formulir yang digunakan untuk mencatat
+                                    tagihan jasa kena pajak.</p>
                             </div>
                         </div>
                     </div>

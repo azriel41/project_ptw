@@ -24,7 +24,10 @@ Route::get('/master-item', 'Purchasing@item')->name('master_item');
 Route::get('/master-supplier', 'Purchasing@msupplier')->name('master_supplier');
 Route::get('/supplier', 'Purchasing@supplier')->name('supplier');
 Route::get('/print-invoice', 'Purchasing@invoiceout')->name('invoiceout');
-Route::get('/pembelian', 'Purchasing@buy')->name('buy');
+Route::get('/spp', 'Purchasing@spp')->name('spp');
+Route::get('/buat-spp', 'Purchasing@addspp')->name('addspp');
+Route::get('/spp-keluar', 'Purchasing@sppout')->name('sppout');
+Route::get('/faktur', 'Purchasing@faktur')->name('faktur');
 
 //Ruang Training
 Route::get('/user', 'UserController@index')->name('user_index');

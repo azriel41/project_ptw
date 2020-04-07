@@ -26,8 +26,20 @@ class Purchasing extends Controller
     {
         return view('purchasing/invoiceout');
     }
-    public function buy()
+    public function spp()
     {
-        return view('purchasing/buy');
+        return view('purchasing/spp');
+    }
+    public function addspp()
+    {
+        return view('purchasing/create_spp');
+    }
+    public function sppout()
+    {
+        return view('purchasing/sppout');
+    }
+    public function faktur()
+    {
+        return view('purchasing/faktur');
     }
 }

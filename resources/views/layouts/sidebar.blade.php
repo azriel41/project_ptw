@@ -25,7 +25,7 @@
                     </ul>
                 </li>
                 <li class="menu-title">Human Resource</li>
-                 <li>
+                <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Karyawan
                             <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
                         </span></a>
@@ -34,7 +34,7 @@
                         <li><a href="charts-morris">Data Karyawan</a></li>
                     </ul>
                 </li>
-                 <li>
+                <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Absensi
                             <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
                         </span></a>
@@ -43,7 +43,7 @@
                         <li><a href="charts-morris">Sisa Cuti</a></li>
                     </ul>
                 </li>
-                 <li>
+                <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Payroll
                             <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
                         </span></a>
@@ -88,8 +88,8 @@
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-receipt"></i><span> Form<span
                                 class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href="{{ route('buy') }}">Pembelian (SPP)</a></li>
-                        <li><a href="charts-morris">Faktur (Jasa)</a></li>
+                        <li><a href="{{ route('spp') }}">Pembelian (SPP)</a></li>
+                        <li><a href="{{ route('faktur') }}">Faktur Pembelian</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Penjualan</li>

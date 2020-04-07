@@ -2,11 +2,11 @@
 
 @section('breadcrumb')
 <div class="col-sm-6">
-    <h4 class="page-title">Master Item</h4>
+    <h4 class="page-title">Buat Surat Permintaan Pembelian</h4>
     <ol class="breadcrumb mb-0">
         <li class="breadcrumb-item"><a href="javascript: void(0);">Purchasing</a></li>
         <li class="breadcrumb-item"><a href="javascript: void(0);">Form</a></li>
-        <li class="breadcrumb-item active">Pembelian</li>
+        <li class="breadcrumb-item active">Pembelian (SPP)</li>
     </ol>
 </div>
 @endsection
@@ -71,11 +71,12 @@
                 </select>
             </div>
         </div>
-        <div class="form-group float-right">
+        <div class="form-group m-b-0">
             <div>
-                <button type="submit" class="btn btn-primary waves-effect waves-light mr-1">
-                    Submit
+                <button type="submit" class="btn btn-primary waves-effect waves-light"><i class="fas fa-save"></i>
+                    Simpan
                 </button>
+                <a href="{{ route('spp') }}" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Batal</a>
             </div>
         </div>
     </div>
