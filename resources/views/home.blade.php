@@ -15,15 +15,50 @@
 
 @section('breadcrumb')
 <div class="col-sm-6">
-    <h4 class="page-title">Halaman Utama</h4>
     <h4 class="page-title">Yang Baca Gay</h4>
-    <div>
-        <img src="{{ URL::asset('assets/images/IMG_7245.jpg') }}" height="700" width="1000">
-    </div>
 </div>
 @endsection
 
 @section('content')
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Halaman Utama</h4>
+        <div id="carouselExampleCaption" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="{{ URL::asset('assets/images/IMG_7245.jpg') }}" alt="..." class="d-block img-fluid">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ini merupakan tempat yang menjadi saksi bisu antara Verdy dan Deny yang melakukan hubungan
+                            terlarang sesama laki-laki</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ URL::asset('assets/images/jamed1.jpeg') }}" alt="..."
+                        class="d-block img-fluid mx-auto">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Jamed Top Global Gay</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ URL::asset('assets/images/jamed2.jpeg') }}" alt="..."
+                        class="d-block img-fluid mx-auto">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Jamed Ding Ding Pak Ding Ding</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaption" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Kembali</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaption" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Lanjut</span>
+            </a>
+        </div>
+    </div>
+</div>
 {{-- <div class="row">
     <div class="col-xl-3 col-md-6">
         <div class="card mini-stat bg-primary text-white">
