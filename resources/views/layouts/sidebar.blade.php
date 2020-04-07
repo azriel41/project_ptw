@@ -21,6 +21,7 @@
                         <li><a href="{{ route('user_index') }}">User</a></li>
                         <li><a href="{{ route('departemen_index') }}">Departemen</a></li>
                         <li><a href="{{ route('karyawan_index') }}">Karyawan</a></li>
+                        <li><a href="{{ route('master_produk') }}">Produk</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Human Resource</li>
@@ -52,11 +53,25 @@
                 </li>
                 <li class="menu-title">Produksi</li>
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Lebokno Dewe
-                            Coy <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
-                        </span></a>
+                    <a href="#" class="waves-effect">
+                        <i class="ti-pie-chart"></i>
+                        <span> Request Bahan Baku</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect">
+                        <i class="ti-pie-chart"></i>
+                        <span> Laporan
+                            <span class="float-right menu-arrow">
+                                <i class="mdi mdi-chevron-right"></i>
+                            </span>
+                        </span>
+                    </a>
                     <ul class="submenu">
-                        <li><a href="charts-morris">Lebokno Dewe Coy</a></li>
+                        <li><a href="charts-morris">Downtime Mesin</a></li>
+                        <li><a href="charts-morris">Harian Produksi</a></li>
+                        <li><a href="charts-morris">Produk Cacat</a></li>
+                        <li><a href="charts-morris">Serah Terima Produk</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Ware House</li>

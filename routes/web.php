@@ -61,3 +61,19 @@ Route::post('/departemen_store', 'DepartemenController@store')->name('departemen
 Route::post('/departemen_update/{id}', 'DepartemenController@update')->name('departemen_update');
 Route::post('/departemen_destroy/{id}', 'DepartemenController@destroy')->name('departemen_destroy');
 
+// PEMBUKAAN DIVISI PRODUKSI -------------------------------------------------------------------------
+
+Route::get('/produk', 'ProdukController@index')->name('master_produk');
+Route::get('/produk/tambah', 'ProdukController@create');
+Route::post('/produk', 'ProdukController@store')->name('master_produk_store');
+Route::get('/produk/{produk}', 'ProdukController@show');
+Route::delete('/produk/{produk}', 'ProdukController@destroy');
+Route::get('/produk/{produk}/edit', 'ProdukController@edit');
+Route::patch('/produk/{produk}', 'ProdukController@update');
+
+Route::get('getdataproduk',[ 
+    'uses' => 'ProdukController@getdataproduk',
+    'as' => 'ajax.get.data.produk'
+]);
+
+// PENUTUPAN DIVISI PRODUKSI -------------------------------------------------------------------------
