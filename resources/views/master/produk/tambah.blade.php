@@ -4,6 +4,7 @@
 <!-- Dropzone css -->
 <link href="{{ URL::asset('plugins/dropzone/dist/dropzone.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ URL::asset('plugins/sweet-alert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ URL::asset('plugins/dropify/dropify.min.css') }}" rel="stylesheet" type="text/css">
 @endsection
 
 @section('breadcrumb')
@@ -41,7 +42,7 @@
                         <div class="form-group row">
                             <label for="example-text-input" class="col-sm-2 col-form-label">gambar</label>
                             <div class="col-sm-10">
-                                <input type="file" name="gambar" class="form-control" value="{{ old('gambar') }}">
+                                <input type="file" name="gambar" class="dropify" value="{{ old('gambar') }}">
                             </div>
                         </div>
                         <div class="form-group m-b-0">
@@ -67,6 +68,7 @@
 <script src="{{ URL::asset('plugins/parsleyjs/parsley.min.js') }}"></script>
 <script src="{{ URL::asset('plugins/sweet-alert2/sweetalert2.min.js') }}"></script>
 <script src="{{ URL::asset('assets/pages/sweet-alert.init.js') }}"></script>  
+<script src="{{ URL::asset('plugins/dropify/dropify.min.js') }}"></script>
 @endsection
 
 @section('script-bottom')
@@ -74,5 +76,8 @@
     $(document).ready(function() {
          $('form').parsley();
     });
+    
+    $('.dropify').dropify();
+
 </script>
 @endsection
