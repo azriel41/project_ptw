@@ -115,9 +115,9 @@
                         <li><a href="charts-echart">Laporan Penjualan</a></li>
                     </ul>
                 </li>
-                <li class="menu-title">Panduan</li>
+                <li class="menu-title">Bantuan</li>
                 <li>
-                    <a href="{{ route('faq') }}" class="waves-effect"><i class="ti-calendar"></i><span> Panduan
+                    <a href="{{ route('faq') }}" class="waves-effect"><i class="ti-calendar"></i><span> FAQ
                         </span></a>
                 </li>
             </ul>
