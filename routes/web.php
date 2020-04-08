@@ -79,4 +79,17 @@ Route::get('getdataproduk',[
     'as' => 'ajax.get.data.produk'
 ]);
 
+Route::get('/item', 'ItemController@index')->name('master_item');
+Route::get('/item/tambah', 'ItemController@create');
+Route::post('/item', 'ItemController@store')->name('master_item_store');
+Route::get('/item/{item}', 'ItemController@show');
+Route::delete('/item/{item}', 'ItemController@destroy');
+Route::get('/item/{item}/edit', 'ItemController@edit');
+Route::patch('/item/{item}', 'ItemController@update');
+
+Route::get('getdataitem',[ 
+    'uses' => 'ItemController@getdataitem',
+    'as' => 'ajax.get.data.item'
+]);
+
 // PENUTUPAN DIVISI PRODUKSI -------------------------------------------------------------------------
