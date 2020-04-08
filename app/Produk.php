@@ -13,6 +13,6 @@ class Produk extends Model
         if(!$this->gambar){
             return 'Belum Upload Gambar';
         }
-        return asset('Gambar Produk/'.$this->gambar);
+        return '<img src ="'.asset('Gambar Produk/'.$this->gambar).'" height="150px" width="150px">';
     }
 }

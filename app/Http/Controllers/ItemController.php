@@ -93,6 +93,17 @@ class ItemController extends Controller
 
             return  $pdk->tipe; 
         })
+        ->addColumn('jenis', function($pdk){
+            if($pdk->tipe == '1'){
+                $pdk->tipe = 'Bahan Baku';
+            } else if ($pdk->tipe == '2'){
+                $pdk->tipe = 'Produk Jadi';
+            } else if ($pdk->tipe == '3'){
+                $pdk->tipe = 'Mesin';
+            } 
+
+            return  $pdk->tipe; 
+        })
         ->addColumn('aksi', function($pdk){
                 return '<a href="item/'.$pdk->id.'/edit" class="btn btn-info">Edit</a>
                         <a href="item/'.$pdk->id.'/hapus" class="btn btn-danger delete" data-url="'.url('/item/'.$pdk->id).'" data-toggle="modal" data-target="#deleteModal">Hapus</a>';
