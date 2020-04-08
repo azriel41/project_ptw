@@ -68,7 +68,7 @@
                         </span>
                     </a>
                     <ul class="submenu">
-                        <li><a href="charts-morris">Downtime Mesin</a></li>
+                        <li><a href="{{ route('downtime') }}">Downtime Mesin</a></li>
                         <li><a href="charts-morris">Harian Produksi</a></li>
                         <li><a href="charts-morris">Produk Cacat</a></li>
                         <li><a href="charts-morris">Serah Terima Produk</a></li>

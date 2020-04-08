@@ -15,4 +15,8 @@ class Item extends Model
         }
         return '<img src ="'.asset('assets/images/item/'.$this->gambar).'" height="150px" width="150px">';
     }
+
+    public function downtime(){
+        return $this->hasMany('App\Downtime');
+    }
 }
