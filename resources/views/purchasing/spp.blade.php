@@ -52,10 +52,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>SPP-200406/0001</td>
+                            <td>SPP-200406/0002</td>
                             <td>2020/04/06</td>
-                            <td>NON-DEPARTMENT</td>
-                            <td>Rp. 75.000</td>
+                            <td>DEPARTMENT PRODUKSI</td>
+                            <td>Rp. 65.000</td>
                             <td align="center">
                                 <span class="badge badge-danger p-2">Ditolak</span>
                             </td>
