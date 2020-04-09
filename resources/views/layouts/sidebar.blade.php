@@ -21,7 +21,7 @@
                         <li><a href="{{ route('user_index') }}">User</a></li>
                         <li><a href="{{ route('departemen_index') }}">Departemen</a></li>
                         <li><a href="{{ route('karyawan_index') }}">Karyawan</a></li>
-                        <li><a href="{{ route('master_produk') }}">Produk</a></li>
+                        <!-- <li><a href="{{ route('master_produk') }}">Produk</a></li> -->
                     </ul>
                 </li>
                 <li class="menu-title">Human Resource</li>
@@ -68,7 +68,7 @@
                         </span>
                     </a>
                     <ul class="submenu">
-                        <li><a href="charts-morris">Downtime Mesin</a></li>
+                        <li><a href="{{ route('downtime') }}">Downtime Mesin</a></li>
                         <li><a href="charts-morris">Harian Produksi</a></li>
                         <li><a href="charts-morris">Produk Cacat</a></li>
                         <li><a href="charts-morris">Serah Terima Produk</a></li>

@@ -92,4 +92,17 @@ Route::get('getdataitem',[
     'as' => 'ajax.get.data.item'
 ]);
 
+Route::get('/downtime', 'DowntimeController@index')->name('downtime');
+Route::get('/downtime/tambah', 'DowntimeController@create');
+Route::post('/downtime', 'DowntimeController@store')->name('downtime_store');
+Route::get('/downtime/{downtime}', 'DowntimeController@show');
+Route::delete('/downtime/{downtime}', 'DowntimeController@destroy');
+Route::get('/downtime/{downtime}/edit', 'DowntimeController@edit');
+Route::patch('/downtime/{downtime}', 'DowntimeController@update')->name('downtime_update');;
+
+Route::get('getdatadowntime',[ 
+    'uses' => 'DowntimeController@getdatadowntime',
+    'as' => 'ajax.get.data.downtime'
+]);
+
 // PENUTUPAN DIVISI PRODUKSI -------------------------------------------------------------------------

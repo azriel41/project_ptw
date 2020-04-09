@@ -12,7 +12,7 @@ class ItemController extends Controller
         return view('master.item.index');
     }
 
-    public function create(Request $request)
+    public function create()
     {
        return view('master.item.tambah');
     }
