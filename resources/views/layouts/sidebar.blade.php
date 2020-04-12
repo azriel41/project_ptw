@@ -21,10 +21,11 @@
                         <li><a href="{{ route('user_index') }}">User</a></li>
                         <li><a href="{{ route('departemen_index') }}">Departemen</a></li>
                         <li><a href="{{ route('karyawan_index') }}">Karyawan</a></li>
+                        <!-- <li><a href="{{ route('master_produk') }}">Produk</a></li> -->
                     </ul>
                 </li>
                 <li class="menu-title">Human Resource</li>
-                 <li>
+                <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Karyawan
                             <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
                         </span></a>
@@ -33,7 +34,7 @@
                         <li><a href="charts-morris">Data Karyawan</a></li>
                     </ul>
                 </li>
-                 <li>
+                <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Absensi
                             <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
                         </span></a>
@@ -42,7 +43,7 @@
                         <li><a href="charts-morris">Sisa Cuti</a></li>
                     </ul>
                 </li>
-                 <li>
+                <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Payroll
                             <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
                         </span></a>
@@ -52,11 +53,25 @@
                 </li>
                 <li class="menu-title">Produksi</li>
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-pie-chart"></i><span> Lebokno Dewe
-                            Coy <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span>
-                        </span></a>
+                    <a href="#" class="waves-effect">
+                        <i class="ti-pie-chart"></i>
+                        <span> Request Bahan Baku</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect">
+                        <i class="ti-pie-chart"></i>
+                        <span> Laporan
+                            <span class="float-right menu-arrow">
+                                <i class="mdi mdi-chevron-right"></i>
+                            </span>
+                        </span>
+                    </a>
                     <ul class="submenu">
-                        <li><a href="charts-morris">Lebokno Dewe Coy</a></li>
+                        <li><a href="{{ route('downtime') }}">Downtime Mesin</a></li>
+                        <li><a href="charts-morris">Harian Produksi</a></li>
+                        <li><a href="charts-morris">Produk Cacat</a></li>
+                        <li><a href="charts-morris">Serah Terima Produk</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Ware House</li>
@@ -73,8 +88,8 @@
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-receipt"></i><span> Form<span
                                 class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href="{{ route('buy') }}">Pembelian (SPP)</a></li>
-                        <li><a href="charts-morris">Faktur (Jasa)</a></li>
+                        <li><a href="{{ route('spp') }}">Pembelian (SPP)</a></li>
+                        <li><a href="{{ route('faktur') }}">Faktur Pembelian</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Penjualan</li>
@@ -100,9 +115,9 @@
                         <li><a href="charts-echart">Laporan Penjualan</a></li>
                     </ul>
                 </li>
-                <li class="menu-title">Panduan</li>
+                <li class="menu-title">Bantuan</li>
                 <li>
-                    <a href="{{ route('faq') }}" class="waves-effect"><i class="ti-calendar"></i><span> Panduan
+                    <a href="{{ route('faq') }}" class="waves-effect"><i class="ti-calendar"></i><span> FAQ
                         </span></a>
                 </li>
             </ul>

@@ -24,7 +24,10 @@ Route::get('/master-item', 'Purchasing@item')->name('master_item');
 Route::get('/master-supplier', 'Purchasing@msupplier')->name('master_supplier');
 Route::get('/supplier', 'Purchasing@supplier')->name('supplier');
 Route::get('/print-invoice', 'Purchasing@invoiceout')->name('invoiceout');
-Route::get('/pembelian', 'Purchasing@buy')->name('buy');
+Route::get('/spp', 'Purchasing@spp')->name('spp');
+Route::get('/buat-spp', 'Purchasing@addspp')->name('addspp');
+Route::get('/spp-keluar', 'Purchasing@sppout')->name('sppout');
+Route::get('/faktur', 'Purchasing@faktur')->name('faktur');
 
 //Ruang Training
 Route::get('/user', 'UserController@index')->name('user_index');
@@ -62,3 +65,45 @@ Route::post('/departemen_store', 'DepartemenController@store')->name('departemen
 Route::post('/departemen_update/{id}', 'DepartemenController@update')->name('departemen_update');
 Route::post('/departemen_destroy/{id}', 'DepartemenController@destroy')->name('departemen_destroy');
 
+// PEMBUKAAN DIVISI PRODUKSI -------------------------------------------------------------------------
+
+Route::get('/produk', 'ProdukController@index')->name('master_produk');
+Route::get('/produk/tambah', 'ProdukController@create');
+Route::post('/produk', 'ProdukController@store')->name('master_produk_store');
+Route::get('/produk/{produk}', 'ProdukController@show');
+Route::delete('/produk/{produk}', 'ProdukController@destroy');
+Route::get('/produk/{produk}/edit', 'ProdukController@edit');
+Route::patch('/produk/{produk}', 'ProdukController@update');
+
+Route::get('getdataproduk',[ 
+    'uses' => 'ProdukController@getdataproduk',
+    'as' => 'ajax.get.data.produk'
+]);
+
+Route::get('/item', 'ItemController@index')->name('master_item');
+Route::get('/item/tambah', 'ItemController@create');
+Route::post('/item', 'ItemController@store')->name('master_item_store');
+Route::get('/item/{item}', 'ItemController@show');
+Route::delete('/item/{item}', 'ItemController@destroy');
+Route::get('/item/{item}/edit', 'ItemController@edit');
+Route::patch('/item/{item}', 'ItemController@update');
+
+Route::get('getdataitem',[ 
+    'uses' => 'ItemController@getdataitem',
+    'as' => 'ajax.get.data.item'
+]);
+
+Route::get('/downtime', 'DowntimeController@index')->name('downtime');
+Route::get('/downtime/tambah', 'DowntimeController@create');
+Route::post('/downtime', 'DowntimeController@store')->name('downtime_store');
+Route::get('/downtime/{downtime}', 'DowntimeController@show');
+Route::delete('/downtime/{downtime}', 'DowntimeController@destroy');
+Route::get('/downtime/{downtime}/edit', 'DowntimeController@edit');
+Route::patch('/downtime/{downtime}', 'DowntimeController@update')->name('downtime_update');;
+
+Route::get('getdatadowntime',[ 
+    'uses' => 'DowntimeController@getdatadowntime',
+    'as' => 'ajax.get.data.downtime'
+]);
+
+// PENUTUPAN DIVISI PRODUKSI -------------------------------------------------------------------------
