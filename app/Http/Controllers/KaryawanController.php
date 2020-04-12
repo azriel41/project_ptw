@@ -90,7 +90,11 @@ class KaryawanController extends Controller
 
     }
 
-    
+    public function hapus(Request $req,$id)
+    {
+        return $Karyawan;
+    }
+
     public function update(Request $request,$id)
     {
   

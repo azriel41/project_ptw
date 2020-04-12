@@ -42,6 +42,7 @@ Route::get('/karyawan_edit/{id}', 'KaryawanController@edit')->name('karyawan_edi
 Route::get('/karyawan_show/{id}', 'KaryawanController@show')->name('karyawan_show');
 Route::post('/karyawan_store', 'KaryawanController@store')->name('karyawan_store');
 Route::post('/karyawan_update/{id}', 'KaryawanController@update')->name('karyawan_update');
+Route::delete('/karyawan_hapus/{id}', 'KaryawanController@hapus')->name('karyawan_hapus');
 
 //Ruang Training
 Route::get('/akun', 'master/akunController@index')->name('akun_index');
