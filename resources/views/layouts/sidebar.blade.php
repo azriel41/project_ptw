@@ -21,6 +21,7 @@
                         <li><a href="{{ route('user_index') }}">User</a></li>
                         <li><a href="{{ route('departemen_index') }}">Departemen</a></li>
                         <li><a href="{{ route('karyawan_index') }}">Karyawan</a></li>
+                        <li><a href="{{ route('akun_index') }}">Akun</a></li>
                         <!-- <li><a href="{{ route('master_produk') }}">Produk</a></li> -->
                     </ul>
                 </li>
