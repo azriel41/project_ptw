@@ -54,19 +54,11 @@
                             <td>{{ $element->pendidikan }}</td>
                             <td>{{ $element->status_kerja }}</td>
                             <td align="center">
-{{--                                 <form action="{{ route('karyawan_destroy',['id'=>$karyawan->id]) }}" method="POST">
-                                    {{ csrf_field() }}
-                                    {{ method_field('POST') }}
-
-                                    <a class="btn btn-info" href="{{ route('karyawan_show',['id'=>$karyawan->id]) }}"><i
-                                            class="fas fa-eye"></i> Show</a>
-
-                                    <a class="btn btn-primary" href="{{ route('karyawan_edit',['id'=>$karyawan->id]) }}"><i
-                                            class="fas fa-edit"></i> Edit</a>
-
-                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"
-                                            aria-hidden="true"></i> Delete</button>
-                                </form> --}}
+                                <form action="{{ $karyawan->id }}" method="POST">
+                                    @method('delete')
+                                    @csrf    
+                                    <button type="submit" class="btn btn-danger"> Hapus </button>
+                                </form>
                             </td>
                         </tr>
                         @endforeach

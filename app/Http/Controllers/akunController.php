@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Storage;
 use Auth; 
 use Carbon\carbon;
 use Response;
-class KaryawanController extends Controller
+class akunController extends Controller
 {
     protected $models;
     public function __construct()
@@ -23,15 +23,15 @@ class KaryawanController extends Controller
     public function index()
     
         {
-            $karyawan = $this->model->karyawan ()->get();
-            return view('master.karyawan.index',compact('karyawan'));
+            $akun = $this->model->akun()->get();
+            return view('master.akun.index',compact('akun'));
         }
         
    
     public function create()
     {
 
-            return view('master.karyawan.create');
+            return view('master.akun.create');
         // return view('master.user.create');
     }
 
@@ -43,18 +43,18 @@ class KaryawanController extends Controller
 
             if ($req->id == null or $req->id == 'null' or $req->id == '') {
 
-                $id = $this->model->karyawan()->max('id')+1;
+                $id = $this->model->akun()->max('id')+1;
 
                 $file = $req->file('image');
 
                 if ($file != null) {
-                    $fileName = 'karyawan_'.$id.'.'.$file->getClientOriginalExtension();
+                    $fileName = 'akun_'.$id.'.'.$file->getClientOriginalExtension();
                     Storage::put($fileName,file_get_contents($file));
                 }else{
                     return Response::json(['status'=>2,'pesan'=>'Gambar harus diisi']);
                 }
 
-                $this->model->karyawan()
+                $this->model->akun()
                      ->create([
                         'id'                        => $id,
                         'nik'                       => $req->nik,
@@ -77,7 +77,7 @@ class KaryawanController extends Controller
                         'updated_at'                => carbon::now()
                      ]);
 
-                return redirect('karyawan')->with('status', 'Data berhasil disimpan');
+                return redirect('akun')->with('status', 'Data berhasil disimpan');
 
             }
 
@@ -86,15 +86,11 @@ class KaryawanController extends Controller
 
     public function edit($id)
     {
-        return view('master.karyawan.edit',compact('karyawan'));
+        return view('master.akun.edit',compact('akun'));
 
     }
 
-    public function hapus(Request $req,$id)
-    {
-        return $Karyawan;
-    }
-
+    
     public function update(Request $request,$id)
     {
   
