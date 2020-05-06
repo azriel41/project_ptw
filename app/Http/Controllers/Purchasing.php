@@ -28,18 +28,18 @@ class Purchasing extends Controller
     }
     public function spp()
     {
-        return view('purchasing/spp');
+        return view('purchasing.spp');
     }
     public function addspp()
     {
-        return view('purchasing/create_spp');
+        return view('purchasing.create_spp');
     }
     public function sppout()
     {
-        return view('purchasing/sppout');
+        return view('purchasing.sppout');
     }
     public function faktur()
     {
-        return view('purchasing/faktur');
+        return view('purchasing.faktur');
     }
 }

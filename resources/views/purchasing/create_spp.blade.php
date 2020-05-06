@@ -14,71 +14,94 @@
 @section('content')
 <div class="card">
     <div class="card-body">
-        <div class="form-group row">
-            <label for="example-text-input" class="col-sm-2 col-form-label">Text</label>
-            <div class="col-sm-10">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="example-search-input" class="col-sm-2 col-form-label">Search</label>
-            <div class="col-sm-10">
-                <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="example-email-input" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
-                <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="example-url-input" class="col-sm-2 col-form-label">URL</label>
-            <div class="col-sm-10">
-                <input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="example-url-input" class="col-sm-2 col-form-label">Date</label>
-            <div class="col-sm-10">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="datepicker-autoclose">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+        <form class="outer-repeater">
+            <div data-repeater-list="outer-group" class="outer">
+                <div data-repeater-item="" class="outer">
+                    <div class="form-group">
+                        <label for="formname">No Surat Permintaan Pembelian</label>
+                        <input type="text" class="form-control" id="formname" value="SPP-200406/0003" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formemail">Department</label>
+                        <select class="form-control">
+                            <option>DEPARTMENT HUMAN RESOURCE</option>
+                            <option>DEPARTMENT PRODUKSI</option>
+                            <option>DEPARTMENT WAREHOUSE</option>
+                            <option>DEPARTMENT PENJUALAN</option>
+                            <option>DEPARTMENT FINANCE</option>
+                            <option>NON-DEPARTMENT</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formemail">Supplier</label>
+                        <select class="form-control">
+                            <option>PT. Gramedia</option>
+                            <option>Google LLC</option>
+                            <option>PT. GOJEK</option>
+                            <option>PT. Tokopedia</option>
+                            <option>PT. Bukalapak</option>
+                            <option>PT. Mencari Waifu Yang Hilang</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formname">Tanggal</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="datepicker-autoclose">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inner-repeater mb-4">
+                        <div data-repeater-list="inner-group" class="inner form-group">
+                            <label>Barang</label>
+                            <div data-repeater-item="" class="inner mb-3 row">
+
+                                <div class="col-md-10 col-8 mb-2">
+                                    <select class="form-control">
+                                        <option>Alat Tulis Kantor</option>
+                                        <option>Kertas A4/RIM</option>
+                                        <option>Binder</option>
+                                        <option>Bolpoin</option>
+                                        <option>Tinta Printer</option>
+                                        <option>Mouse</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-10 col-8">
+                                    <input class="form-control" type="number" value="0" id="example-number-input">
+                                </div>
+                                <div class="col-md-2 col-4">
+                                    <input data-repeater-delete="" type="button" class="btn btn-primary btn-block inner"
+                                        value="Hapus">
+                                </div>
+                            </div>
+                        </div>
+                        <input data-repeater-create="" type="button" class="btn btn-success inner"
+                            value="Tambah Barang">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formmessage">Keterangan</label>
+                        <textarea id="formmessage" class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group m-b-0">
+                        <div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light"><i
+                                    class="fas fa-save"></i>
+                                Simpan
+                            </button>
+                            <a href="{{ route('spp') }}" class="btn btn-secondary"><i class="fas fa-arrow-left"></i>
+                                Batal</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="form-group row">
-            <label for="example-tel-input" class="col-sm-2 col-form-label">Telephone</label>
-            <div class="col-sm-10">
-                <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="example-number-input" class="col-sm-2 col-form-label">Kebutuhan</label>
-            <div class="col-sm-10">
-                <input class="form-control" type="number" value="0" id="example-number-input">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Jenis</label>
-            <div class="col-sm-10">
-                <select class="form-control">
-                    <option>Bahan Produksi</option>
-                    <option>Jasa</option>
-                    <option>Alat Tulis Kantor</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group m-b-0">
-            <div>
-                <button type="submit" class="btn btn-primary waves-effect waves-light"><i class="fas fa-save"></i>
-                    Simpan
-                </button>
-                <a href="{{ route('spp') }}" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Batal</a>
-            </div>
-        </div>
+        </form>
     </div>
 </div>
 @endsection
@@ -88,8 +111,11 @@
     $(function(){
      $("#datepicker-autoclose").datepicker({
          format: 'dd/mm/yyyy',
-         autoclose: true,         
+         autoclose: true,   
+         orientation: "top auto"      
      });
     });
 </script>
+<script src="{{ URL::asset('plugins/jquery-repeater/jquery.repeater.min.js') }}"></script>
+<script src="{{ URL::asset('assets/pages/form-repeater.int.js') }}"></script>
 @endsection

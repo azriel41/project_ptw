@@ -27,10 +27,11 @@
                     style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                     <thead align="center">
                         <tr>
-                            <th>No SPP</th>
+                            <th>No Faktur</th>
                             <th>Tanggal</th>
                             <th>Departement</th>
                             <th>Harga Total</th>
+                            <th>Status</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -41,17 +42,8 @@
                             <td>NON-DEPARTMENT</td>
                             <td>Rp. 175.000</td>
                             <td align="center">
-                                <form action="#" method="POST">
-                                    <a class="btn btn-info" href="{{ route('sppout') }}"><i class="fas fa-eye"></i>
-                                        Show</a>
-                                </form>
+                                <span class="badge badge-success p-2">Diterima</span>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>FP-200406/0001</td>
-                            <td>2020/04/06</td>
-                            <td>NON-DEPARTMENT</td>
-                            <td>Rp. 175.000</td>
                             <td align="center">
                                 <form action="#" method="POST">
                                     <a class="btn btn-info" href="{{ route('sppout') }}"><i class="fas fa-eye"></i>
@@ -65,20 +57,12 @@
                             <td>NON-DEPARTMENT</td>
                             <td>Rp. 175.000</td>
                             <td align="center">
-                                <form action="#" method="POST">
-                                    <a class="btn btn-info" href="{{ route('sppout') }}"><i class="fas fa-eye"></i>
-                                        Show</a>
-                                </form>
+                                <span class="badge badge-danger p-2">Ditolak</span>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>FP-200406/0001</td>
-                            <td>2020/04/06</td>
-                            <td>NON-DEPARTMENT</td>
-                            <td>Rp. 175.000</td>
                             <td align="center">
                                 <form action="#" method="POST">
-                                    <a class="btn btn-info" href="{{ route('sppout') }}"><i class="fas fa-eye"></i>
+                                    <a class="btn btn-info disabled" href="{{ route('sppout') }}"><i
+                                            class="fas fa-eye"></i>
                                         Show</a>
                                 </form>
                             </td>

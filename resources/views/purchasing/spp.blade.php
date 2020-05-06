@@ -31,6 +31,7 @@
                             <th>Tanggal</th>
                             <th>Departement</th>
                             <th>Harga Total</th>
+                            <th>Status</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -41,17 +42,8 @@
                             <td>NON-DEPARTMENT</td>
                             <td>Rp. 75.000</td>
                             <td align="center">
-                                <form action="#" method="POST">
-                                    <a class="btn btn-info" href="{{ route('sppout') }}"><i class="fas fa-eye"></i>
-                                        Show</a>
-                                </form>
+                                <span class="badge badge-success p-2">Diterima</span>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>SPP-200406/0001</td>
-                            <td>2020/04/06</td>
-                            <td>NON-DEPARTMENT</td>
-                            <td>Rp. 75.000</td>
                             <td align="center">
                                 <form action="#" method="POST">
                                     <a class="btn btn-info" href="{{ route('sppout') }}"><i class="fas fa-eye"></i>
@@ -60,37 +52,17 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>SPP-200406/0001</td>
+                            <td>SPP-200406/0002</td>
                             <td>2020/04/06</td>
-                            <td>NON-DEPARTMENT</td>
-                            <td>Rp. 75.000</td>
+                            <td>DEPARTMENT PRODUKSI</td>
+                            <td>Rp. 65.000</td>
                             <td align="center">
-                                <form action="#" method="POST">
-                                    <a class="btn btn-info" href="{{ route('sppout') }}"><i class="fas fa-eye"></i>
-                                        Show</a>
-                                </form>
+                                <span class="badge badge-danger p-2">Ditolak</span>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>SPP-200406/0001</td>
-                            <td>2020/04/06</td>
-                            <td>NON-DEPARTMENT</td>
-                            <td>Rp. 75.000</td>
                             <td align="center">
                                 <form action="#" method="POST">
-                                    <a class="btn btn-info" href="{{ route('sppout') }}"><i class="fas fa-eye"></i>
-                                        Show</a>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>SPP-200406/0001</td>
-                            <td>2020/04/06</td>
-                            <td>NON-DEPARTMENT</td>
-                            <td>Rp. 75.000</td>
-                            <td align="center">
-                                <form action="#" method="POST">
-                                    <a class="btn btn-info" href="{{ route('sppout') }}"><i class="fas fa-eye"></i>
+                                    <a class="btn btn-info disabled" href="{{ route('sppout') }}"><i
+                                            class="fas fa-eye"></i>
                                         Show</a>
                                 </form>
                             </td>
